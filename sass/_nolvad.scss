@@ -1,0 +1,155 @@
+section#nolvad{
+
+	.left{
+		padding-bottom: 25px;
+		.nolv{
+
+			height: 38px;
+			width: 100%;
+			position: relative;
+			margin-bottom: 5px;
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			border-radius: 5px;
+			background-image: url("../img/nolv-bg.png");
+			cursor: hover;
+			cursor: pointer;
+			div, a{
+				display: block;
+				text-align: left;
+				height: 38px;
+				float:left;
+				line-height: 38px;
+				text-transform: uppercase;
+				 font-family: 'tepeno_sansbold';
+				 font-size: 10pt;
+			}
+			&.show article.kirjeldus{
+				display:block;
+				visibility: visible;
+				opacity: 1;
+			}
+			article.kirjeldus{
+				position: absolute;
+				background-image: url("../img/n-kirj-bg.png");
+				width: 96%;
+				padding: 2%;
+				visibility: hidden;
+				opacity: 0;
+				z-index: 3;
+				-webkit-border-radius: 5px;
+				-moz-border-radius: 5px;
+				border-radius: 5px;
+				top: 38px;
+				color: #fff;
+				 font-family: 'tepeno_sansregular';
+				 -webkit-transition: all 300ms ease;
+-moz-transition: all 300ms ease;
+-ms-transition: all 300ms ease;
+-o-transition: all 300ms ease;
+transition: all 300ms ease;
+
+				 p{
+				 	padding-top: 10px;
+				 	padding-bottom: 10px;
+				 	margin: 0;
+				 }
+			}
+			.ikoon{
+				width: 11.260714%;
+				background-position: center center;
+				background-repeat: no-repeat;
+				
+			}
+			.nimi{
+				width: 26.547214%;
+				color: #fff;
+			}
+			.nimetus{
+				width: 36.86428%;
+				color: $helesinine;
+			}
+			.video{
+				width: 11%;
+				background-image: url("../img/video.png");
+				background-repeat: no-repeat;
+				background-position: center center;
+				position: relative;
+				&:hover:after{
+					display: block;
+				}
+				&:after{
+					content:"Sõida nõlv läbi";
+					display:none;
+					height: 20px;
+					line-height: 20px;
+					position: absolute;
+					color: $helesinine;
+					text-align: center;
+					padding-left: 5px;
+					padding-right: 5px;
+					font-size: 9pt;
+					text-transform: none;
+					top: 50%;
+					margin-top: -10px;
+					left: -100%;
+					-webkit-border-radius: 3px;
+					-moz-border-radius: 3px;
+					border-radius: 3px;
+					background-color: #FFF;
+
+				}
+			}
+
+			.staatus{
+				width: 14.29285%;
+				&.avatud{
+					color: #6fb121;
+				}
+				&.suletud{
+					color: $hall;
+				}
+			}
+		}
+		header{
+			padding-top: 20px;
+			width: 100%;
+			position: relative;
+			margin-bottom: 20px;
+			h1{
+				color: $headerhall;
+				text-transform: uppercase;
+				 font-family: 'tepeno_sansbold';
+				 font-size: 10pt;
+				 margin: 0;
+				 padding: 0;
+			}
+			h1.h1left{
+				float:left;
+				width: 50%;
+				display: block;
+			}
+			h1.h1right{
+				float:right;
+				width: 50%;
+				display: block;
+				text-align: right;
+			}
+		}
+	}
+	.right{
+		padding-top: 50px;
+		padding-bottom: 25px;
+		a.kaameralink{
+			color: $helesinine;
+			text-transform: uppercase;
+			 font-family: 'tepeno_sansbold';
+			 text-decoration: none;
+			 width: 100%;
+			 display: block;
+			 line-height: 90px;
+			 text-align: center;
+			 font-size: 15pt;
+		}
+	}
+}

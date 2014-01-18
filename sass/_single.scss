@@ -1,0 +1,37 @@
+.right{
+	.img{
+			height: 100px;
+			width: 100%;
+			display: block;
+			background-repeat: no-repeat;
+			background-position: center center;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			background-size: cover;
+			-webkit-border-radius: 5px 0px 0px 5px;
+			-moz-border-radius: 5px 0px 0px 5px;
+			border-radius: 5px 0px 0px 5px;
+			margin-top: 12px;
+			position: relative;
+			span{
+				position: absolute;
+				bottom: 5px;
+				right: 20px;
+				color: #fff;
+				text-shadow: 1px 1px 2px #454545;
+				font-size: 18pt;
+				text-align: right;
+
+
+			}
+	}
+}
+
+section.uudis{
+	padding-left: 0px;
+	.left{
+		width:94%;
+		padding-right: 3%;
+		padding-left: 3%;
+	}
+}

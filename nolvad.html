@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title></title>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<!--[if lt IE 9]>
+  <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+/****************************
+*****************************
+
+Main slider
+
+*****************************
+****************************/
+
+
+
+$(".slogancontainer").carouFredSel({
+	responsive:true,
+	height: 220,
+	width: "62%",
+	circular: true,
+	infinite: true,
+	scroll: {
+		fx : "cover-fade"
+	},
+	
+	items: {
+		visible: 1,
+		start: "random",
+		height: 220
+	},
+	
+	auto: 3000,
+	next: {
+		button: "#next",
+		key: "right"
+	}
+});
+
+/** nolvad kirjeldus **/
+
+
+	$('.nolv').click(function() {
+	   $(this).toggleClass("show");
+
+	});
+
+$('.nolv').mouseleave(function() {
+	   $(this).removeClass("show");
+
+	});
+
+}); /* <--- ready function end*/
+
+</script>
+
+</head>
+<body>
+<div class="wrapper group">
+<header class="main">
+	<div class="logo"></div>
+	<section class="ilmateade">
+		<div class="avatud"><span class="caps">Avatud nõlvad</span> <span>2</span>/<span>7</span></div><!-- avatud -->
+		<div class="ilm">
+			<span class="caps">Temp </span><span> -2</span>&#186C </br>
+			<span class="caps">Tuul </span> <span> 4</span> m/s
+		</div><!-- ilm -->
+	</section><!-- ilmateade -->
+	<section class="right">
+		<div class="hooaeg">
+			<span class="caps">Hooaeg </span>
+			<a  class="suvi" href="suvi"></a>
+			<a  class="talv" href="talv"></a>
+		</div><!-- hooaeg -->
+		<a class="caps wakepark" href="">Otepää wakepark</a>
+	</section><!-- right -->
+</header><!-- mainheader -->
+<nav class="main">
+		<ul>
+			<li><a href="">AVALEHT</a></li>
+			<li><a href="">HINNAKIRI</a></li>
+			<li><a href="">Nõlvad</a></li>
+			<li><a href="">Majutus</a></li>
+			<li><a href="">Laenutus</a></li>
+			<li class="active"><a href="">Galerii</a></li>
+			<li><a href="">Asukoht</a></li>
+			<li><a href="">Kontakt</a></li>
+		</ul>
+</nav><!-- main nav -->
+<section class="middle">
+	<div id="next"></div>
+	<div class="slogancontainer">
+		<div class="slogan"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, animi voluptatem tempore ad aliquam natus. Architecto minima aperiam iusto necessitatibus.</p></div>
+		<div class="slogan"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, animi voluptatem tempore ad aliquam natus. Architecto minima aperiam iusto necessitatibus.</p></div>
+		<div class="slogan"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, animi voluptatem tempore ad aliquam natus. Architecto minima aperiam iusto necessitatibus.</p></div>
+	</div><!-- slogancontainer-->
+	<a href="" class="reaalajas">Jälgi meid reaalajas!</a>
+</section><!--middle-->
+<section class="content group" id="nolvad">
+	<div class="left">
+		<header class="sisu group">
+			<h1 class="h1left">Nõlvad</h1>
+			<h1 class="h1right">Kliki nõlval, et vaadata lähemalt</h1>
+		</header>
+		<div class="nolv">
+			<div class="ikoon" style="background-image: url(../img/nolv1.png);"></div>
+			<div class="nimi">Nõlv1</div>
+			<div class="nimetus">Laste</div>
+			<a href="#" class="video"></a>
+			<div class="staatus avatud">Avatud</div>
+			<article class="kirjeldus">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, obcaecati, veritatis, magnam, delectus illo explicabo ipsa asperiores eligendi officiis natus dolore nihil consequuntur sequi vel omnis saepe maxime error optio.</p>
+			</article>
+		</div><!--nolv -->
+		<div class="nolv">
+			<div class="ikoon" style="background-image: url(../img/nolv2.png);"></div>
+			<div class="nimi">Nõlv2</div>
+			<div class="nimetus">Lasketiiru</div>
+			<a href="#" class="video"></a>
+			<div class="staatus avatud">Avatud</div>
+			<article class="kirjeldus">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error quasi cupiditate repellendus. Accusantium, consequuntur error ipsam voluptatum fuga excepturi impedit repellat rerum minima autem. Voluptates, expedita earum aut perspiciatis architecto.</p>
+			</article>
+		</div><!--nolv -->
+		<div class="nolv">
+			<div class="ikoon" style="background-image: url(../img/nolv3.png);"></div>
+			<div class="nimi">Nõlv3</div>
+			<div class="nimetus">Kolme kase</div>
+			<a href="#" class="video"></a>
+			<div class="staatus avatud">Avatud</div>
+			<article class="kirjeldus">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum hic repellat aspernatur reiciendis error quibusdam asperiores accusamus. Possimus, facilis, accusamus deleniti alias vel mollitia aperiam sapiente! Distinctio at a odio!</p>
+			</article>
+		</div><!--nolv -->
+		<div class="nolv">
+			<div class="ikoon" style="background-image: url(../img/nolv4.png);"></div>
+			<div class="nimi">Nõlv4</div>
+			<div class="nimetus">Anso I</div>
+			<a href="#" class="video"></a>
+			<div class="staatus suletud">Suletud</div>
+			<article class="kirjeldus">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, a repudiandae perferendis ipsa optio repellat velit facere tempora inventore saepe! Magni, fuga odio iste doloribus deleniti dolorem ut non aliquid!</p>
+			</article>
+		</div><!--nolv -->
+		<div class="nolv">
+			<div class="ikoon" style="background-image: url(../img/nolv5.png);"></div>
+			<div class="nimi">Nõlv5</div>
+			<div class="nimetus">Anso II</div>
+			<a href="#" class="video"></a>
+			<div class="staatus avatud">Avatud</div>
+			<article class="kirjeldus">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis sequi architecto odit dolore quos soluta blanditiis ducimus nihil. Distinctio nam aliquam ex! Consequuntur, aut, culpa esse quos autem dolore dolorem!</p>
+			</article>
+		</div><!--nolv -->
+		<div class="nolv">
+			<div class="ikoon" style="background-image: url(../img/nolv6.png);"></div>
+			<div class="nimi">Nõlv6</div>
+			<div class="nimetus">Hundikurk</div>
+			<a href="#" class="video"></a>
+			<div class="staatus avatud">Avatud</div>
+			<article class="kirjeldus">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi reiciendis fugiat et officiis animi. Voluptas, eius tempora suscipit enim? Modi, sed, cupiditate et impedit rem eligendi voluptates laborum praesentium amet!</p>
+			</article>
+		</div><!--nolv -->
+		<div class="nolv">
+			<div class="ikoon" style="background-image: url(../img/nolv7.png);"></div>
+			<div class="nimi">Supersnowtubing</div>
+			<div class="nimetus">Supersnowtubing</div>
+			<a href="#" class="video"></a>
+			<div class="staatus avatud">Avatud</div>
+			<article class="kirjeldus">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, quo, et dicta eaque at voluptas maiores deleniti labore dolore est quae voluptatem? Impedit, aspernatur, animi exercitationem tempore cum vel laborum!</p>
+			</article>
+		</div><!--nolv -->
+	</div><!--left-->
+	<div class="right">
+		<a href="#" class="kaameralink">Kaamera 1</a>
+		<a href="#" class="kaameralink">Kaamera 2</a>
+		<a href="#" class="kaameralink">Kaamera 3</a>
+	</div><!-- right -->
+</section><!-- content -->
+<footer class="main group">
+	<div class="footersection left">
+		<h1 class="caps">Kontakt</h1>
+		<div class="kontaktid">
+
+			<span>Tel. 551 234 567</span>
+			<span>info@email.com</span>
+			<span>Anso 9, Nüpli küla Otepää</span>
+			
+			
+		</div>
+		<div class="social">
+			<a href="" class="facebook"></a>
+		</div>
+	</div><!-- left -->
+	<div class="footersection middle">
+		<iframe width="100%" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.ee/maps?f=q&amp;source=s_q&amp;hl=et&amp;geocode=&amp;q=Ansom%C3%A4e+suusakeskus,+Otep%C3%A4%C3%A4+vald&amp;aq=0&amp;oq=ansom%C3%A4e+suus&amp;sll=58.043591,26.511267&amp;sspn=0.008143,0.022724&amp;ie=UTF8&amp;hq=Ansom%C3%A4e+suusakeskus,&amp;hnear=Otep%C3%A4%C3%A4+vald,+Valgamaa&amp;t=m&amp;ll=58.044094,26.51207&amp;spn=0.063598,0.146255&amp;z=12&amp;iwloc=A&amp;output=embed"></iframe></small>
+	</div><!-- middle(kaart) -->
+	<div class="footersection right">
+		<h1 class="caps">Toetajad</h1>
+		<div class="toetaja"></div>
+		<div class="toetaja"></div>
+		<div class="toetaja"></div>
+	</div><!-- right(toetajad) -->
+</footer><!--- footer.main -->
+</div><!--wrapper-->
+</body>
+</html>

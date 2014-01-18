@@ -1,0 +1,73 @@
+footer.main{
+	width: 100%;
+	color: $hall;
+	margin-top: 35px;
+	padding-bottom: 70px;
+	height: 200px;
+	.footersection{
+		float:left;
+		
+		height: 200px;
+		&.right{
+			width: 26%;
+			padding-left: 2%;
+			h1{
+				width: 100%;
+				margin: 0;
+				padding: 0;
+				font-size: 11pt;
+				font-weight:  normal;
+			}
+			.toetaja{
+				width: 100%;
+				height: 40px;
+				background-image: url("../img/toetaja.png");
+				background-repeat: no-repeat;
+				background-position: center center;
+				margin-top: 10px;
+				margin-bottom: 10px;
+
+			}
+		}
+		&.middle{
+			width: 44%;
+			a.larger{
+				color: $helesinine !important;
+			}
+		}
+		&.left{
+			width: 26%;
+			padding-right: 2%;
+			.social{
+				width: 100%;
+				clear:both;
+				a.facebook{
+					display:block;
+					width: 28px;
+					height: 28px;
+					background-image: url("../img/facebook.png");
+					background-repeat: no-repeat;
+					margin-left: 25px;
+				}
+			}
+			h1{
+				float:left;
+				width: 50%;
+				margin: 0;
+				padding: 0;
+				font-size: 11pt;
+				font-weight:  normal;
+				text-indent: 25px;
+
+			}
+			.kontaktid{
+				float:right;
+				width: 50%;
+				span{
+					margin-bottom: 20px;
+					display:block;
+				}
+			}
+		}
+	}
+}

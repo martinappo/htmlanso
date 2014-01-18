@@ -1,0 +1,39 @@
+html{
+	body{
+		margin:0px;
+		padding:0px;
+		font-family: 'tepeno_sansregular';
+		background-image: url("../img/bg.jpg");
+		background-attachment: fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 0px -180px;
+		.caps{
+			text-transform: Uppercase;
+			font-family: 'tepeno_sansbold';
+		}
+		.group:after {
+		  content: "";
+		  display: table;
+		  clear: both;
+
+		}
+		.wrapper{
+			width: 70%;
+			margin-left: auto;
+			margin-right: auto;
+			position: relative;
+			
+		}
+	}
+}
+
+
+/*
+ehk lää-heb vaja
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+ */
