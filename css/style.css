@@ -586,7 +586,7 @@ header.main section.right .hooaeg a.talv {
 }
 
 nav.main {
-  background-color: #5589f1;
+  background-color: rgba(0, 133, 255, 0.86);
   width: 100%;
   height: 45px;
   -webkit-border-radius: 0px 0px 5px 5px;
@@ -671,7 +671,7 @@ section.middle a.reaalajas:after {
   left: 0;
   right: 0;
   display: block;
-  background-color: #5589f1;
+  background-color: rgba(0, 133, 255, 0.86);
   z-index: -1;
   -webkit-border-radius: 5px 0px 0px 5px;
   -moz-border-radius: 5px 0px 0px 5px;
@@ -751,7 +751,7 @@ footer.main .footersection.middle {
   width: 44%;
 }
 footer.main .footersection.middle a.larger {
-  color: #5589f1 !important;
+  color: rgba(0, 133, 255, 0.86) !important;
 }
 footer.main .footersection.left {
   width: 26%;
@@ -887,7 +887,7 @@ section#nolvad .left .nolv .nimi {
 }
 section#nolvad .left .nolv .nimetus {
   width: 36.86428%;
-  color: #5589f1;
+  color: rgba(0, 133, 255, 0.86);
 }
 section#nolvad .left .nolv .video {
   width: 11%;
@@ -905,7 +905,7 @@ section#nolvad .left .nolv .video:after {
   height: 20px;
   line-height: 20px;
   position: absolute;
-  color: #5589f1;
+  color: rgba(0, 133, 255, 0.86);
   text-align: center;
   padding-left: 5px;
   padding-right: 5px;
@@ -958,7 +958,7 @@ section#nolvad .right {
   padding-bottom: 25px;
 }
 section#nolvad .right a.kaameralink {
-  color: #5589f1;
+  color: rgba(0, 133, 255, 0.86);
   text-transform: uppercase;
   font-family: 'tepeno_sansbold';
   text-decoration: none;
