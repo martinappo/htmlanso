@@ -1038,3 +1038,7 @@ section#hinnakiri table.hinnakiri td.head1 {
   height: 30px;
   line-height: 30px;
 }
+section#hinnakiri table.hinnakiri td.hind {
+  background-color: #d2def8;
+  color: #6c6c6c;
+}
