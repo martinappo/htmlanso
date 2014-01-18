@@ -10,6 +10,7 @@ html{
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: 0px -180px;
+		color: #323337;
 		.caps{
 			text-transform: Uppercase;
 			font-family: 'tepeno_sansbold';
@@ -19,6 +20,10 @@ html{
 		  display: table;
 		  clear: both;
 
+		}
+		.full{
+			width: 100%;
+			clear:both;
 		}
 		.wrapper{
 			width: 70%;

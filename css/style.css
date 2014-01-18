@@ -379,6 +379,7 @@ html body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0px -180px;
+  color: #323337;
 }
 html body .caps {
   text-transform: Uppercase;
@@ -387,6 +388,10 @@ html body .caps {
 html body .group:after {
   content: "";
   display: table;
+  clear: both;
+}
+html body .full {
+  width: 100%;
   clear: both;
 }
 html body .wrapper {
@@ -964,13 +969,72 @@ section#nolvad .right a.kaameralink {
   font-size: 15pt;
 }
 
-section#hinnakiri table.hinnakiri {
+section#hinnakiri {
+  padding-bottom: 20px;
+}
+section#hinnakiri .right {
+  padding-top: 0px;
+  width: 33%;
+  padding-right: 2%;
+  margin-bottom: 15px;
+}
+section#hinnakiri .left {
+  margin-bottom: 15px;
+}
+section#hinnakiri header {
+  padding-top: 20px;
   width: 100%;
+  position: relative;
+  margin-bottom: 20px;
+}
+section#hinnakiri header h1 {
+  color: gray;
+  text-transform: uppercase;
+  font-family: 'tepeno_sansbold';
+  font-size: 10pt;
+  margin: 0;
+  padding: 0;
+}
+section#hinnakiri h1.hinnakiri {
+  display: block;
+  background-color: #6c95eb;
+  height: 27px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  padding: 0;
+  margin: 0;
+  margin-right: 11px;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 12pt;
+  line-height: 27px;
+}
+section#hinnakiri table.hinnakiri {
+  margin-left: -5px;
+  width: 100%;
+  border-spacing: 5px;
+  border-collapse: separate;
+}
+section#hinnakiri table.hinnakiri tr.head2 td {
+  background-color: #89aaef;
 }
 section#hinnakiri table.hinnakiri td {
   background-color: #6c95eb;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  height: 20px;
+  height: 25px;
+  border: none;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 5px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+}
+section#hinnakiri table.hinnakiri td.head1 {
+  height: 30px;
+  line-height: 30px;
 }
