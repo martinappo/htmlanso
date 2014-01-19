@@ -1,0 +1,18 @@
+nav.arhiiv{
+	float:left;
+	ul{
+		list-style-type: none;
+		li{
+			a{
+				text-transform: uppercase;
+				text-decoration: none;
+				line-height: 1.2;
+				font-family: 'tepeno_sansbold';
+				font-size: 10pt;
+				&:hover{
+					color: $hall;
+				}
+			}
+		}
+	}
+}

@@ -26,12 +26,25 @@
 			}
 	}
 }
-
+section#single{
+	article{
+		&:first-of-type{
+			padding-top: 20px;
+		}
+	}
+}
 section.uudis{
 	padding-left: 0px;
 	.left{
 		width:94%;
 		padding-right: 3%;
 		padding-left: 3%;
+		article{
+		&:first-of-type{
+			padding-top: 20px;
+		}
 	}
+	}
+
+
 }

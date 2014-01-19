@@ -1,6 +1,8 @@
 $helesinine: rgba(0, 133, 255, 0.86);
 $hall: #6c6c6c;
 $headerhall: #808080;
+$suvi : rgba(226, 163, 0, 1);
+
 
 @import "_normalize.scss";
 @import "_common.scss";
@@ -13,4 +15,6 @@ $headerhall: #808080;
 @import "_hinnakiri.scss";
 @import "_majutus.scss";
 @import "_galerii.scss";
+@import "_arhiiv.scss";
+@import "_suvi.scss";
 

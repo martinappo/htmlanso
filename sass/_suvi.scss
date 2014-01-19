@@ -1,0 +1,67 @@
+
+.wrapper#suvi{
+article{
+a{
+	color: $suvi;
+}	
+}
+a.koik{
+	color: $suvi;
+}
+
+nav.main{
+		background-color: $suvi;
+	}
+
+section.middle{
+	a.reaalajas{
+		&:after{
+			background-color: $suvi;
+		}
+
+	}
+	
+}
+
+
+table.hinnakiri{
+		margin-left: -5px;
+		width: 100%;
+		border-spacing: 5px;
+   		border-collapse: separate;
+   		tr.head2{
+   			td{
+   				background-color: rgba(226, 191, 99, 1);
+   			}
+   		}
+		td{
+			background-color: $suvi;
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			border-radius: 5px;
+			height: 25px;
+			border: none;
+			padding-left: 0px;
+			padding-right: 0px;
+			padding-top: 5px;
+			color: #fff;
+			text-transform: uppercase;
+			text-align: center;
+			&.head1{
+				height: 30px;
+				line-height: 30px;
+			}
+			&.hind{
+				background-color: rgba(226, 163, 0, 0.3);
+				color: $hall;
+			}
+		}
+	}
+
+
+
+
+}
+	
+
+	

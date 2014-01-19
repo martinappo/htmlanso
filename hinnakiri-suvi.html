@@ -54,10 +54,10 @@ $(".slogancontainer").carouFredSel({
 
 
 </head>
-<body>
-<div class="wrapper group">
+<body style="background-image: url('/img/bg-suvi.jpg');">
+<div class="wrapper group" id="suvi">
 <header class="main">
-	<div class="logo"></div>
+	<a href=""><div class="logo"></div></a>
 	<section class="ilmateade">
 		<div class="avatud"><span class="caps">Avatud nõlvad</span> <span>2</span>/<span>7</span></div><!-- avatud -->
 		<div class="ilm">
@@ -76,14 +76,11 @@ $(".slogancontainer").carouFredSel({
 </header><!-- mainheader -->
 <nav class="main">
 		<ul>
-			<li><a href="">AVALEHT</a></li>
-			<li><a href="">HINNAKIRI</a></li>
-			<li><a href="">Nõlvad</a></li>
-			<li><a href="">Majutus</a></li>
-			<li><a href="">Laenutus</a></li>
-			<li class="active"><a href="">Galerii</a></li>
-			<li><a href="">Asukoht</a></li>
-			<li><a href="">Kontakt</a></li>
+			<li><a href="">Kämpingud</a></li>
+			<li><a href="">Haagissuvilate parkimine</a></li>
+			<li><a href="">Telkimisala</a></li>
+			<li><a href="">Kümblustünn</a></li>
+			<li><a href="">Kalapüük</a></li>
 		</ul>
 </nav><!-- main nav -->
 <section class="middle">
@@ -98,39 +95,91 @@ $(".slogancontainer").carouFredSel({
 	</div><!-- slogancontainer-->
 	<a href="" class="reaalajas">Jälgi meid reaalajas!</a>
 </section><!--middle-->
-<section class="content group">
+<section class="content group" id="hinnakiri">
+<header>
+	<h1>Hinnakiri</h1>
+</header>
 	<div class="left">
-		<article class="group">
-			<h1>12.12.2014</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, mollitia, atque, pariatur nobis consectetur cupiditate rerum sed quos eveniet a harum sit ipsam quibusdam iusto sapiente at quia maxime molestias?</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, veniam veritatis ratione ipsa. Explicabo officia magnam impedit reprehenderit magni. Omnis?</p>
-			<a href="#" class="loe">Loe edasi</a>
-		</article><!-- single article -->
-		<article class="group">
-			<h1>12.12.2014</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, mollitia, atque, pariatur nobis consectetur cupiditate rerum sed quos <a href="">eveniet</a> eveniet a harum sit ipsam quibusdam iusto sapiente at quia maxime molestias?</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, veniam veritatis ratione ipsa. Explicabo officia magnam impedit reprehenderit magni. Omnis?</p>
-			<a href="#" class="loe">Loe edasi</a>
-		</article><!-- single article -->
-		<article class="group">
-			<h1>12.12.2014</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, mollitia, atque, pariatur nobis consectetur cupiditate rerum sed quos eveniet a harum sit ipsam quibusdam iusto sapiente at quia maxime molestias?</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, veniam veritatis ratione ipsa. Explicabo officia magnam impedit reprehenderit magni. Omnis?</p>
-			<a href="#" class="loe">Loe edasi</a>
-		</article><!-- single article -->
-		<article class="group">
-			<h1>12.12.2014</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, mollitia, atque, pariatur nobis consectetur cupiditate rerum sed quos eveniet a harum sit ipsam quibusdam iusto sapiente at quia maxime molestias?</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, veniam veritatis ratione ipsa. Explicabo officia magnam impedit reprehenderit magni. Omnis?</p>
-			<a href="#" class="loe">Loe edasi</a>
-		</article><!-- single article -->
-	<a href="#" class="koik">Vaata kõiki uudiseid</a>
+		<table class="hinnakiri">
+		<tr>
+			<td colspan="3" class="head1">Mäe hinnakiri</td>
+		</tr>
+
+	    <tr class="head2">
+	        <td>Vanus</td>
+	        <td>Aeg</td>
+	        <td>Hind</td>
+	    </tr>
+	    <tr>
+	        <td rowspan="4">Täiskasvanud <br> (alates 13)</td>
+	        <td rowspan="2">E-R</td>
+	        <td class="hind">10eur / 3H</td>
+	    </tr>
+	    <tr>
+	        <td class="hind">12eur / päev</td>
+	    </tr>
+	    <tr>
+	        <td rowspan="2">L-P</td>
+	        <td class="hind">12eur / 3h</td>
+	    </tr>
+	    <tr>
+	        <td class="hind">15eur / päev</td>
+	    </tr>
+	    <tr>
+	        <td rowspan="4">Lapsed <br> (kuni 12)</td>
+	        <td rowspan="2">E-R</td>
+	        <td class="hind">8eur / 3H</td>
+	    </tr>
+	    <tr>
+	        <td class="hind">10eur / päev</td>
+	    </tr>
+	    <tr>
+	        <td rowspan="2">L-P</td>
+	        <td class="hind">10eur / 3H</td>
+	    </tr>
+	    <tr>
+	        <td class="hind">12eur / päev</td>
+	    </tr>
+	</table>
 	</div><!--left-->
 	<div class="right">
-		<a href="" style="background-image: url('img/snowtub.png');" class="imglink"><span class="caps">Supersnowtubing</span></a>
-		<a href="" style="background-image: url('img/park.png');" class="imglink"><span class="caps">Park</span></a>
-		<a href="" style="background-image: url('img/lauaope.png');" class="imglink"><span class="caps">Lumelaua- ja mäesuusaõpe</span></a>
+		<table class="hinnakiri">
+		    <tr>
+		        <td colspan="2" class="head1">Laenutus</td>
+		    </tr>
+		    <tr class="head2">
+		        <td>Mida laenutad</td>
+		        <td>Hind</td>
+		    </tr>
+		    <tr>
+		        <td rowspan="3">Mäesuusad</td>
+		        <td class="hind">6EUR / 1h</td>
+		    </tr>
+		    <tr>
+		        <td class="hind">10EUR / 3h</td>
+		    </tr>
+		    <tr>
+		        <td class="hind">1EUR / päev</td>
+		    </tr>
+		    <tr>
+		        <td rowspan="3">Lumelaud</td>
+		        <td class="hind">7eur / 1h</td>
+		    </tr>
+		    <tr>
+		        <td class="hind">11eur / 3h</td>
+		    </tr>
+		    <tr>
+		        <td class="hind">16eur / päev</td>
+		    </tr>
+		</table>
 	</div><!-- right -->
+	<div class="full">
+		<p>Info ja broneerimine  56 276 276</p>
+		<p>
+		Ansomägi jätab endale õiguse muuta hindu ja lahtiolekuaegu.</p>
+		<p>
+		SNOWTUBINGU HINNAD vaata SUPERSNOWTUBING lingi alt</p>
+	</div>
 </section><!-- content -->
 <footer class="main group">
 	<div class="footersection left">
