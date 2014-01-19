@@ -1,0 +1,105 @@
+section#galerii{
+	padding-left: 0px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	header{
+		padding-left: 25px;
+		padding-top: 0px;
+	}
+	.left#albumid{
+		a.album:nth-child(3n+2){
+			margin-right: 0.75%;
+			margin-left: 0.75%;
+		}
+	}
+	/* single album */
+	.left#album{
+		a.pilt{
+			display: block;
+			width: 23%;
+			height: 150px;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			background-size: cover;
+			
+			float:left;
+			margin-right: 0.5%;
+			margin-bottom: 0.5%;
+		}
+	}
+	.video{
+		width: 100%;
+
+		margin-bottom: 20px;
+		iframe, .tutvustus {
+			float:left;
+		}
+		.tutvustus{
+			width: 48%;
+			padding-left: 2%;
+			h1{
+				color: $helesinine;
+				margin: 0;
+				padding: 0;
+				margin-bottom: 15px;
+				font-size: 15pt;
+				text-transform: uppercase;
+				font-family: 'tepeno_sansbold';
+			}
+		}
+	}
+	a.album{
+			display:inline-block;
+			float:left;
+			width: 32.833333333%;
+			height: 150px;
+			background-repeat: no-repeat;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			background-size: cover;
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			border-radius: 5px;
+			margin-bottom: 5px;
+			color: #fff;
+			text-shadow: 1px 1px 2px #454545;
+			text-decoration: none;
+			text-transform: uppercase;
+			line-height: 150px;
+			text-align: center;
+			font-size: 20pt;
+			white-space: nowrap;
+			
+		}
+	nav.galerii{
+		padding-left: 28px;
+		padding-bottom: 20px;
+		ul{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			li{
+				float:left;
+				margin-right: 20px;
+				padding: 0;
+				margin-left: 0;
+				&.ui-tabs-active{
+					a{
+						color: $helesinine;
+					}
+				}
+				a{
+					text-transform: uppercase;
+					text-decoration: none;
+					font-family: 'tepeno_sansbold';
+					color: $hall;
+				}
+			}
+		}
+	}
+	.left{
+		width:94%;
+		padding-right: 3%;
+		padding-left: 3%;
+	}
+}

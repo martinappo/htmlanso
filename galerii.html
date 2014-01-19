@@ -8,6 +8,7 @@
 <![endif]-->
 <script src="js/jquery.min.js"></script>
 <script src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
+<script src="js/jquery-ui-1.10.3.custom.min.js"></script>
 <link rel="stylesheet" href="js/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
 <script type="text/javascript" src="js/fancybox/source/jquery.fancybox.pack.js"></script>
 <script type="text/javascript">
@@ -46,12 +47,32 @@ $(".slogancontainer").carouFredSel({
 	}
 });
 
+/** tabs **/
+
+$("#galerii").tabs(	{ 
+fx: { opacity: 'toggle' },
+	select: function(event, ui) {
+		jQuery(this).css('height', jQuery(this).height());
+		jQuery(this).css('overflow', 'hidden');
+	},
+	show: function(event, ui) {
+		jQuery(this).css('height', 'auto');
+		jQuery(this).css('overflow', 'visible');
+	}
+}
+	); 
+
+
+//fancybox
+
+$("a.fancybox").fancybox();
+
+
 
 
 }); /* <--- ready function end*/
 
 </script>
-
 
 </head>
 <body>
@@ -89,43 +110,61 @@ $(".slogancontainer").carouFredSel({
 <section class="middle">
 	<div id="next"></div>
 	<div class="slogancontainer">
-		<div class="slogan"><p>Lorem ipsumf dolor sit amet, consectetur adipisicing elit. Maxime, animi voluptatem tempore ad aliquam natus. Architecto minima aperiam iusto necessitatibus.</p></div>
-
-		<div class="slogan"><p>joujou</p></div>
-
-		<div class="slogan"><p>Lorem ipsum dolor sit amet.</p></div>
-
+		<div class="slogan"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, animi voluptatem tempore ad aliquam natus. Architecto minima aperiam iusto necessitatibus.</p></div>
 	</div><!-- slogancontainer-->
 	<a href="" class="reaalajas">Jälgi meid reaalajas!</a>
 </section><!--middle-->
-<section class="content group">
-	<div class="left">
-		<article>
-			<h1>12.12.2014</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, mollitia, atque, pariatur nobis consectetur cupiditate rerum sed quos eveniet a harum sit ipsam quibusdam iusto sapiente at quia maxime molestias?</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, veniam veritatis ratione ipsa. Explicabo officia magnam impedit reprehenderit magni. Omnis?</p>
-		</article><!-- single article -->
-		<article>
-			<h1>12.12.2014</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, mollitia, atque, pariatur nobis consectetur cupiditate rerum sed quos eveniet a harum sit ipsam quibusdam iusto sapiente at quia maxime molestias?</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, veniam veritatis ratione ipsa. Explicabo officia magnam impedit reprehenderit magni. Omnis?</p>
-		</article><!-- single article -->
-		<article>
-			<h1>12.12.2014</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, mollitia, atque, pariatur nobis consectetur cupiditate rerum sed quos eveniet a harum sit ipsam quibusdam iusto sapiente at quia maxime molestias?</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, veniam veritatis ratione ipsa. Explicabo officia magnam impedit reprehenderit magni. Omnis?</p>
-		</article><!-- single article -->
-		<article>
-			<h1>12.12.2014</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, mollitia, atque, pariatur nobis consectetur cupiditate rerum sed quos eveniet a harum sit ipsam quibusdam iusto sapiente at quia maxime molestias?</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, veniam veritatis ratione ipsa. Explicabo officia magnam impedit reprehenderit magni. Omnis?</p>
-		</article><!-- single article -->
+<section class="content group" id="galerii">
+	<nav class="galerii group">
+		<ul>
+			<li><a href="#albumid">Albumid</a></li>
+			<li><a href="#videod">Videod</a></li>
+		</ul>
+	</nav>
+	<div class="left" id="albumid">
+		
+		<a href="" class="album" style="background-image: url(../img/park.png);">Snowtubing</a>
+		<a href="" class="album" style="background-image: url(../img/park.png);">Lumelaud</a>
+		<a href="" class="album" style="background-image: url(../img/park.png);">Majutus</a>
+		<a href="" class="album" style="background-image: url(../img/park.png);">Parkimine</a>
+		<a href="" class="album" style="background-image: url(../img/park.png);">Tore</a>
+
 	</div><!--left-->
-	<div class="right">
-		<a href="" style="background-image: url('img/snowtub.png');" class="imglink"><span class="caps">Supersnowtubing</span></a>
-		<a href="" style="background-image: url('img/park.png');" class="imglink"><span class="caps">Park</span></a>
-		<a href="" style="background-image: url('img/lauaope.png');" class="imglink"><span class="caps">Lumelaua- ja mäesuusaõpe</span></a>
-	</div><!-- right -->
+	<div class="left" id="videod">
+		<div class="video group">
+			<iframe width="50%" height="315" src="http://www.youtube.com/embed/O4WCs3EPQdk" frameborder="0" allowfullscreen></iframe>
+			<div class="tutvustus">
+			<h1>Pealkiri</h1>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, voluptate ut explicabo possimus corrupti velit dolore nostrum quibusdam assumenda pariatur eveniet maiores magni quaerat autem quidem sapiente mollitia expedita tenetur.
+			</div>
+		</div>
+
+		<div class="video group">
+			<iframe width="50%" height="315" src="http://www.youtube.com/embed/O4WCs3EPQdk" frameborder="0" allowfullscreen></iframe>
+			<div class="tutvustus">
+			<h1>Pealkiri</h1>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, voluptate ut explicabo possimus corrupti velit dolore nostrum quibusdam assumenda pariatur eveniet maiores magni quaerat autem quidem sapiente mollitia expedita tenetur.
+			</div>
+		</div>
+
+		<div class="video group">
+			<iframe width="50%" height="315" src="http://www.youtube.com/embed/O4WCs3EPQdk" frameborder="0" allowfullscreen></iframe>
+			<div class="tutvustus">
+			<h1>Pealkiri</h1>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, voluptate ut explicabo possimus corrupti velit dolore nostrum quibusdam assumenda pariatur eveniet maiores magni quaerat autem quidem sapiente mollitia expedita tenetur.
+			</div>
+		</div>
+
+		<div class="video group">
+			<iframe width="50%" height="315" src="http://www.youtube.com/embed/O4WCs3EPQdk" frameborder="0" allowfullscreen></iframe>
+			<div class="tutvustus">
+				<h1>Pealkiri</h1>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, voluptate ut explicabo possimus corrupti velit dolore nostrum quibusdam assumenda pariatur eveniet maiores magni quaerat autem quidem sapiente mollitia expedita tenetur.
+			</div>
+		</div>
+		
+
+	</div><!--left-->
 </section><!-- content -->
 <footer class="main group">
 	<div class="footersection left">
@@ -153,7 +192,5 @@ $(".slogancontainer").carouFredSel({
 	</div><!-- right(toetajad) -->
 </footer><!--- footer.main -->
 </div><!--wrapper-->
-
-
 </body>
 </html>

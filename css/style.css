@@ -415,6 +415,20 @@ section.content {
   -moz-border-radius: 5px;
   border-radius: 5px;
 }
+section.content header {
+  padding-top: 20px;
+  width: 100%;
+  position: relative;
+  margin-bottom: 10px;
+}
+section.content header h1 {
+  color: gray;
+  text-transform: uppercase;
+  font-family: 'tepeno_sansbold';
+  font-size: 10pt;
+  margin: 0;
+  padding: 0;
+}
 section.content .right {
   float: right;
   padding-top: 20px;
@@ -673,9 +687,9 @@ section.middle a.reaalajas:after {
   display: block;
   background-color: rgba(0, 133, 255, 0.86);
   z-index: -1;
-  -webkit-border-radius: 5px 0px 0px 5px;
-  -moz-border-radius: 5px 0px 0px 5px;
-  border-radius: 5px 0px 0px 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
 }
 section.middle #next {
   height: 250px;
@@ -1041,4 +1055,144 @@ section#hinnakiri table.hinnakiri td.head1 {
 section#hinnakiri table.hinnakiri td.hind {
   background-color: #d2def8;
   color: #6c6c6c;
+}
+
+section#majutus {
+  padding-bottom: 20px;
+}
+section#majutus .right {
+  padding-top: 0px;
+  width: 43%;
+  padding-right: 2%;
+}
+section#majutus .left {
+  width: 52%;
+}
+section#majutus table.hinnakiri {
+  margin-left: -5px;
+  width: 100%;
+  border-spacing: 5px;
+  border-collapse: separate;
+}
+section#majutus table.hinnakiri tr.head2 td {
+  background-color: #89aaef;
+}
+section#majutus table.hinnakiri td {
+  background-color: #6c95eb;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  height: 25px;
+  border: none;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 5px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+}
+section#majutus table.hinnakiri td.head1 {
+  height: 30px;
+  line-height: 30px;
+}
+section#majutus table.hinnakiri td.hind {
+  background-color: #d2def8;
+  color: #6c6c6c;
+}
+
+section#galerii {
+  padding-left: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  /* single album */
+}
+section#galerii header {
+  padding-left: 25px;
+  padding-top: 0px;
+}
+section#galerii .left#albumid a.album:nth-child(3n+2) {
+  margin-right: 0.75%;
+  margin-left: 0.75%;
+}
+section#galerii .left#album a.pilt {
+  display: block;
+  width: 23%;
+  height: 150px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  float: left;
+  margin-right: 0.5%;
+  margin-bottom: 0.5%;
+}
+section#galerii .video {
+  width: 100%;
+  margin-bottom: 20px;
+}
+section#galerii .video iframe, section#galerii .video .tutvustus {
+  float: left;
+}
+section#galerii .video .tutvustus {
+  width: 48%;
+  padding-left: 2%;
+}
+section#galerii .video .tutvustus h1 {
+  color: rgba(0, 133, 255, 0.86);
+  margin: 0;
+  padding: 0;
+  margin-bottom: 15px;
+  font-size: 15pt;
+  text-transform: uppercase;
+  font-family: 'tepeno_sansbold';
+}
+section#galerii a.album {
+  display: inline-block;
+  float: left;
+  width: 32.833333333%;
+  height: 150px;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  color: #fff;
+  text-shadow: 1px 1px 2px #454545;
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 150px;
+  text-align: center;
+  font-size: 20pt;
+  white-space: nowrap;
+}
+section#galerii nav.galerii {
+  padding-left: 28px;
+  padding-bottom: 20px;
+}
+section#galerii nav.galerii ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+section#galerii nav.galerii ul li {
+  float: left;
+  margin-right: 20px;
+  padding: 0;
+  margin-left: 0;
+}
+section#galerii nav.galerii ul li.ui-tabs-active a {
+  color: rgba(0, 133, 255, 0.86);
+}
+section#galerii nav.galerii ul li a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: 'tepeno_sansbold';
+  color: #6c6c6c;
+}
+section#galerii .left {
+  width: 94%;
+  padding-right: 3%;
+  padding-left: 3%;
 }

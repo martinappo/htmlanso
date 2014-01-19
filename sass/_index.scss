@@ -5,6 +5,20 @@ section.content{
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
+	header{
+			padding-top: 20px;
+			width: 100%;
+			position: relative;
+			margin-bottom: 10px;
+			h1{
+				color: $headerhall;
+				text-transform: uppercase;
+				 font-family: 'tepeno_sansbold';
+				 font-size: 10pt;
+				 margin: 0;
+				 padding: 0;
+			}
+	}
 	.right{
 		float:right;
 		padding-top: 20px;
