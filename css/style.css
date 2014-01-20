@@ -419,18 +419,17 @@ section.content {
   border-radius: 5px;
 }
 section.content header {
-  padding-top: 20px;
   width: 100%;
   position: relative;
-  margin-bottom: 10px;
 }
 section.content header h1 {
   color: gray;
   text-transform: uppercase;
   font-family: 'tepeno_sansbold';
-  font-size: 10pt;
+  font-size: 11pt;
   margin: 0;
   padding: 0;
+  font-weight: normal;
 }
 section.content .right {
   float: right;
@@ -525,6 +524,7 @@ section.content:before {
   background-image: url("../img/sisu-vari.png");
   background-position: center center;
   background-repeat: no-repeat;
+  left: 0px;
 }
 
 @font-face {
@@ -851,10 +851,6 @@ footer.main .footersection.left .kontaktid span {
   text-align: right;
 }
 
-section#single article:first-of-type {
-  padding-top: 20px;
-}
-
 section.uudis {
   padding-left: 0px;
 }
@@ -862,9 +858,6 @@ section.uudis .left {
   width: 94%;
   padding-right: 3%;
   padding-left: 3%;
-}
-section.uudis .left article:first-of-type {
-  padding-top: 20px;
 }
 
 section#nolvad .left {
@@ -975,7 +968,6 @@ section#nolvad .left .nolv .staatus.suletud {
   color: #6c6c6c;
 }
 section#nolvad .left header {
-  padding-top: 20px;
   width: 100%;
   position: relative;
   margin-bottom: 20px;
@@ -1026,12 +1018,13 @@ section#hinnakiri .right {
 }
 section#hinnakiri .left {
   margin-bottom: 15px;
+  padding-top: 0px;
 }
 section#hinnakiri header {
   padding-top: 20px;
   width: 100%;
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 section#hinnakiri header h1 {
   color: gray;
@@ -1040,6 +1033,7 @@ section#hinnakiri header h1 {
   font-size: 10pt;
   margin: 0;
   padding: 0;
+  font-weight: normal;
 }
 section#hinnakiri h1.hinnakiri {
   display: block;
@@ -1100,6 +1094,11 @@ section#majutus .right {
 }
 section#majutus .left {
   width: 52%;
+  padding-top: 0px;
+}
+section#majutus header {
+  padding-top: 25px;
+  padding-bottom: 20px;
 }
 section#majutus table.hinnakiri {
   margin-left: -5px;
@@ -1149,7 +1148,7 @@ section#galerii .left#albumid a.album:nth-child(3n+2) {
 }
 section#galerii .left#album a.pilt {
   display: block;
-  width: 23%;
+  width: 24.5%;
   height: 150px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -1202,7 +1201,6 @@ section#galerii a.album {
 }
 section#galerii nav.galerii {
   padding-left: 28px;
-  padding-bottom: 20px;
 }
 section#galerii nav.galerii ul {
   list-style-type: none;

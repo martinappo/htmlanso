@@ -8,12 +8,13 @@ section#hinnakiri{
 	}
 	.left{
 		margin-bottom: 15px;
+		padding-top: 0px;
 	}
 	header{
 			padding-top: 20px;
 			width: 100%;
 			position: relative;
-			margin-bottom: 20px;
+			margin-bottom: 15px;
 			h1{
 				color: $headerhall;
 				text-transform: uppercase;
@@ -21,6 +22,7 @@ section#hinnakiri{
 				 font-size: 10pt;
 				 margin: 0;
 				 padding: 0;
+				 font-weight: normal;
 			}
 	}
 	h1.hinnakiri{
