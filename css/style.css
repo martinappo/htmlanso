@@ -372,7 +372,7 @@ html body {
   margin: 0px;
   padding: 0px;
   font-family: 'tepeno_sansregular';
-  background-image: url("../img/bg.jpg");
+  background-image: url("../img/bg_2.jpg");
   background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -382,7 +382,7 @@ html body {
   color: #323337;
 }
 html body a {
-  color: rgba(0, 133, 255, 0.86);
+  color: rgba(0, 173, 255, 0.86);
 }
 html body .caps {
   text-transform: Uppercase;
@@ -445,9 +445,9 @@ section.content .right a.imglink {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
+  -webkit-border-radius: 5px 0px 0px 5px;
+  -moz-border-radius: 5px 0px 0px 5px;
+  border-radius: 5px 0px 0px 5px;
   margin-top: 12px;
   position: relative;
 }
@@ -466,6 +466,7 @@ section.content .right a.imglink:first-of-type {
 section.content .left {
   width: 62%;
   padding-right: 3%;
+  padding-top: 25px;
   float: left;
 }
 section.content .left article {
@@ -500,7 +501,7 @@ section.content .left article p {
 }
 section.content .left a.koik {
   float: right;
-  color: rgba(0, 133, 255, 0.86);
+  color: rgba(0, 173, 255, 0.86);
   text-transform: uppercase;
   text-decoration: none;
   font-family: 'tepeno_sansbold';
@@ -509,7 +510,7 @@ section.content .left a.koik {
 }
 section.content .left a.loe {
   float: right;
-  color: rgba(0, 133, 255, 0.86);
+  color: rgba(0, 173, 255, 0.86);
   text-decoration: none;
 }
 section.content .right {
@@ -542,7 +543,7 @@ section.content:before {
 }
 header.main {
   position: relative;
-  background-color: #FFF;
+  background-color: rgba(255, 255, 255, 0.92);
   -webkit-border-radius: 0px 0px 5px 5px;
   -moz-border-radius: 0px 0px 5px 5px;
   border-radius: 0px 0px 5px 5px;
@@ -553,10 +554,10 @@ header.main {
 header.main .logo {
   float: left;
   height: 100%;
-  width: 237px;
+  width: 225px;
   background-position: center center;
-  margin-left: 25px;
-  background-image: url("../img/logo.png");
+  margin-left: 28px;
+  background-image: url("../img/logo_transparent.png");
   background-repeat: no-repeat;
   -webkit-background-size: contain;
   -moz-background-size: contain;
@@ -564,7 +565,7 @@ header.main .logo {
 }
 header.main .ilmateade {
   float: left;
-  margin-left: 25px;
+  margin-left: 38px;
   padding-top: 25px;
   font-size: 10.5pt;
   background-image: url("../img/ilm.png");
@@ -573,7 +574,7 @@ header.main .ilmateade {
 }
 header.main .ilmateade .avatud {
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   font-size: 11pt;
 }
 header.main .ilmateade .ilm span.caps {
@@ -581,7 +582,7 @@ header.main .ilmateade .ilm span.caps {
 }
 header.main section.right {
   float: right;
-  margin-right: 10px;
+  margin-right: 20px;
   height: 100%;
 }
 header.main section.right a.wakepark {
@@ -621,7 +622,7 @@ header.main section.right .hooaeg a.talv {
 }
 
 nav.main {
-  background-color: rgba(0, 133, 255, 0.86);
+  background-color: rgba(0, 173, 255, 0.86);
   width: 100%;
   height: 45px;
   -webkit-border-radius: 0px 0px 5px 5px;
@@ -630,6 +631,7 @@ nav.main {
   opacity: 0.9;
   z-index: 1;
   margin-top: -5px;
+  clip: rect(5px 0px 0px 0px);
 }
 nav.main ul {
   padding: 0;
@@ -660,7 +662,7 @@ nav.main ul li:before {
   height: 0px;
   border-style: solid;
   border-width: 8px 8px 0 8px;
-  border-color: #ffffff transparent transparent transparent;
+  border-color: #FFF transparent transparent transparent;
   opacity: 1;
   z-index: 2;
 }
@@ -707,7 +709,7 @@ section.middle a.reaalajas:after {
   left: 0;
   right: 0;
   display: block;
-  background-color: rgba(0, 133, 255, 0.86);
+  background-color: rgba(0, 173, 255, 0.86);
   z-index: -1;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -726,7 +728,7 @@ section.middle #next {
 }
 section.middle .slogancontainer {
   margin-left: 25px;
-  font-size: 18pt;
+  font-size: 22pt;
   height: 250px;
   display: block;
   position: relative;
@@ -738,23 +740,24 @@ section.middle .slogancontainer div.slogan {
   padding-top: 10px;
   float: left;
   display: block;
-  bottom: 0px;
+  bottom: 5px;
   position: relative;
 }
 section.middle .slogancontainer div.slogan p {
   text-transform: uppercase;
-  color: #fff;
-  text-shadow: 0 2px 3px #000;
-  text-align: justify;
+  color: #FFF;
+  text-shadow: 0px 2px 2px rgba(133, 133, 133, 0.72);
+  text-align: left;
   bottom: 5px;
   position: absolute;
   margin: 0;
-  line-height: 1.3;
+  line-height: 1;
 }
 
 footer.main {
   width: 100%;
   color: #6c6c6c;
+  text-shadow: 0px 1px 1px 5px #6c6c6c;
   margin-top: 35px;
   padding-bottom: 70px;
   height: 200px;
@@ -787,7 +790,7 @@ footer.main .footersection.middle {
   width: 44%;
 }
 footer.main .footersection.middle a.larger {
-  color: rgba(0, 133, 255, 0.86) !important;
+  color: rgba(0, 173, 255, 0.86) !important;
 }
 footer.main .footersection.left {
   width: 26%;
@@ -930,7 +933,7 @@ section#nolvad .left .nolv .nimi {
 }
 section#nolvad .left .nolv .nimetus {
   width: 36.86428%;
-  color: rgba(0, 133, 255, 0.86);
+  color: rgba(0, 173, 255, 0.86);
 }
 section#nolvad .left .nolv .video {
   width: 11%;
@@ -948,7 +951,7 @@ section#nolvad .left .nolv .video:after {
   height: 20px;
   line-height: 20px;
   position: absolute;
-  color: rgba(0, 133, 255, 0.86);
+  color: rgba(0, 173, 255, 0.86);
   text-align: center;
   padding-left: 5px;
   padding-right: 5px;
@@ -1001,7 +1004,7 @@ section#nolvad .right {
   padding-bottom: 25px;
 }
 section#nolvad .right a.kaameralink {
-  color: rgba(0, 133, 255, 0.86);
+  color: rgba(0, 173, 255, 0.86);
   text-transform: uppercase;
   font-family: 'tepeno_sansbold';
   text-decoration: none;
@@ -1061,10 +1064,11 @@ section#hinnakiri table.hinnakiri {
   border-collapse: separate;
 }
 section#hinnakiri table.hinnakiri tr.head2 td {
-  background-color: #89aaef;
+  background-color: rgba(0, 133, 255, 0.86);
+  opacity: 0.7;
 }
 section#hinnakiri table.hinnakiri td {
-  background-color: #6c95eb;
+  background-color: rgba(0, 133, 255, 0.86);
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -1107,7 +1111,7 @@ section#majutus table.hinnakiri tr.head2 td {
   background-color: #89aaef;
 }
 section#majutus table.hinnakiri td {
-  background-color: #6c95eb;
+  background-color: rgba(0, 133, 255, 0.86);
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -1166,7 +1170,7 @@ section#galerii .video .tutvustus {
   padding-left: 2%;
 }
 section#galerii .video .tutvustus h1 {
-  color: rgba(0, 133, 255, 0.86);
+  color: rgba(0, 173, 255, 0.86);
   margin: 0;
   padding: 0;
   margin-bottom: 15px;
@@ -1212,7 +1216,7 @@ section#galerii nav.galerii ul li {
   margin-left: 0;
 }
 section#galerii nav.galerii ul li.ui-tabs-active a {
-  color: rgba(0, 133, 255, 0.86);
+  color: rgba(0, 173, 255, 0.86);
 }
 section#galerii nav.galerii ul li a {
   text-transform: uppercase;
@@ -1244,16 +1248,16 @@ nav.arhiiv ul li a:hover {
 }
 
 .wrapper#suvi article a {
-  color: #e2a300;
+  color: rgba(226, 172, 0, 0.78);
 }
 .wrapper#suvi a.koik {
-  color: #e2a300;
+  color: rgba(226, 172, 0, 0.78);
 }
 .wrapper#suvi nav.main {
-  background-color: #e2a300;
+  background-color: rgba(226, 172, 0, 0.78);
 }
 .wrapper#suvi section.middle a.reaalajas:after {
-  background-color: #e2a300;
+  background-color: rgba(226, 172, 0, 0.78);
 }
 .wrapper#suvi table.hinnakiri {
   margin-left: -5px;
@@ -1265,7 +1269,7 @@ nav.arhiiv ul li a:hover {
   background-color: #e2bf63;
 }
 .wrapper#suvi table.hinnakiri td {
-  background-color: #e2a300;
+  background-color: rgba(226, 172, 0, 0.78);
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;

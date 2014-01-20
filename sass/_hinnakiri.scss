@@ -46,11 +46,12 @@ section#hinnakiri{
    		border-collapse: separate;
    		tr.head2{
    			td{
-   				background-color: #89aaef;
+   				background-color: $hinnakiri;
+   				opacity: 0.7;
    			}
    		}
 		td{
-			background-color: #6c95eb;
+			background-color: $hinnakiri;
 			-webkit-border-radius: 5px;
 			-moz-border-radius: 5px;
 			border-radius: 5px;
@@ -70,6 +71,7 @@ section#hinnakiri{
 				background-color: #d2def8;
 				color: $hall;
 			}
+			
 		}
 	}
 }

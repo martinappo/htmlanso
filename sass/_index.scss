@@ -31,9 +31,9 @@ section.content{
 			-webkit-background-size: cover;
 			-moz-background-size: cover;
 			background-size: cover;
-			-webkit-border-radius: 5px;
-			-moz-border-radius: 5px;
-			border-radius: 5px;
+			-webkit-border-radius: 5px 0px 0px 5px;
+			-moz-border-radius: 5px 0px 0px 5px;
+			border-radius: 5px 0px 0px 5px;
 			margin-top: 12px;
 			position: relative;
 			span{
@@ -55,6 +55,7 @@ section.content{
 	.left{
 		width: 62%;
 		padding-right: 3%;
+		padding-top: 25px;
 		float:left;
 		article{
 			color:#323337;

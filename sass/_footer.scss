@@ -1,12 +1,12 @@
 footer.main{
 	width: 100%;
 	color: $hall;
+	text-shadow: 0px 1px 1px 5px $hall;
 	margin-top: 35px;
 	padding-bottom: 70px;
 	height: 200px;
 	.footersection{
 		float:left;
-		
 		height: 200px;
 		&.right{
 			width: 26%;
