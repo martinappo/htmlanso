@@ -86,15 +86,15 @@ header.main{
 nav.main{
 		background-color: $helesinine;
 		width: 100%;
-		height: 45px;
+		height: 40px;
 		-webkit-border-radius: 0px 0px 5px 5px;
 		-moz-border-radius: 0px 0px 5px 5px;
 		border-radius: 0px 0px 5px 5px;
 		opacity: 0.9;
 		z-index: 1;
-		margin-top: -5px;
+		margin-top: 0px;
 		clip: rect(5px 0px 0px 0px);
-
+		position: relative;
 		ul{
 			padding: 0;
 			margin: 0;
@@ -102,8 +102,26 @@ nav.main{
 			height: 40px;
 			list-style-type: none;
 			text-align: center;
-			padding-top: 5px;
+			padding-top: 0px;
 			white-space: nowrap;
+			&:after{
+				content:"";
+				height: 5px;
+				width: 5px;
+				background-color: $helesinine;
+				position: absolute;
+				right: 0px;
+				top: -5px;
+			}
+			&:before{
+				content:"";
+				height: 5px;
+				width: 5px;
+				background-color: $helesinine;
+				position: absolute;
+				left: 0px;
+				top: -5px;
+			}
 			li{
 				height: 40px;
 				padding: 0;
