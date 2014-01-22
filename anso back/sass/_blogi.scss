@@ -36,6 +36,7 @@ section.blogi{
 					-moz-background-size: contain;
 					background-size: contain;
 					margin: 5px;
+					background-position: center center;
 					
 				}
 			}
@@ -50,18 +51,26 @@ section.blogi{
 	}
 }
 input.btn{
-	display: block;
-	width: 100px;
+	display: inline-block;
+	width: auto;
 	float:right;
 	margin-right: 25px;
 	background-color:$blue;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 0px;
+	padding-bottom: 0px;
 	border:none;
 	color: #fff;
 	height: 30px;
 	line-height: 30px;
-	padding: 0;
+
 	&:hover{
 		background-color: $grey;
+		color: #fff;
+		border:none;
+		height: 30px;
+		line-height: 30px;
 	}
 }
 input.lahter{

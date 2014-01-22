@@ -51,8 +51,16 @@
 	<header class="group">
 		<h1>Lisa album</h1>
 		<div class="group lisakat">
-			<input type="text" class="lahter" name="pealkiri" placeholder="Albumi pealkiri">
-			<a class="btn" href="#">Lisa Album</a>
+			<form method="post" enctype="multipart/form-data">
+			<div class="bar group">
+				<input type="text" class="lahter" name="pealkiri" value="Albumi pealkiri">
+
+			</div>
+			<div class="bar group">
+			<input class="btn" type="submit" name="addalbum" value="Lisa album">
+				<span>Albumi pilt:</span> <input class="file"  value="Lisa pildid" type="file" name="pilt" size="40">
+			</div>
+		</form>
 		</div>
 	</header>
 	<section class="group full blogi">
@@ -85,7 +93,7 @@
 			</tr>
 
 		</table>
-		<a class="btn" href="#">Kustuta valitud</a>
+		<input type="submit" class="btn" href="#" value="Kustuta valitud"></input>
 
 	</section>
 	<header class="group">
@@ -95,7 +103,7 @@
 			<input type="text" class="lahter" name="pealkiri" placeholder="Video youtube link">
 			<input type="text" class="lahter" name="pealkiri" placeholder="Video pealkiri">
 			<textarea name="video" id="vidtutv" cols="30" rows="10" placeholder="Video tutvustus"></textarea>
-			<a class="btn" href="#">Lisa Video</a>
+			<input type="submit" value="Lisa video" class="btn"></input>
 		</div>
 	<section class="group full blogi">
 	<header><h1>Videod</h1></header>
@@ -127,7 +135,7 @@
 			</tr>
 
 		</table>
-		<a class="btn" href="#">Kustuta valitud</a>
+		<input type="submit" class="btn" value="Kustuta valitud"></input>
 
 	</section>
 

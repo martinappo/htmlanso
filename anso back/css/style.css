@@ -2235,6 +2235,14 @@ html, body {
   padding-bottom: 20px;
 }
 
+.bar {
+  clear: both;
+  width: 96%;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-bottom: 20px;
+}
+
 body:before {
   position: absolute;
   content: "";
@@ -2420,6 +2428,7 @@ section.full table.hinnakiri {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 20px;
 }
 section.full table.hinnakiri td {
   border: solid 1px #636363;
@@ -2619,6 +2628,7 @@ section.blogi table#album tr td .thumb {
   -moz-background-size: contain;
   background-size: contain;
   margin: 5px;
+  background-position: center center;
 }
 section.blogi a.btn {
   margin-right: 10px;
@@ -2628,19 +2638,26 @@ section.blogi a.btn:hover {
 }
 
 input.btn {
-  display: block;
-  width: 100px;
+  display: inline-block;
+  width: auto;
   float: right;
   margin-right: 25px;
   background-color: #53c6d6;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 0px;
+  padding-bottom: 0px;
   border: none;
   color: #fff;
   height: 30px;
   line-height: 30px;
-  padding: 0;
 }
 input.btn:hover {
   background-color: #636363;
+  color: #fff;
+  border: none;
+  height: 30px;
+  line-height: 30px;
 }
 
 input.lahter {

@@ -50,9 +50,20 @@
 <section id="index" class="group">
 	<header class="group">
 		<h1>Albumi pealkiri</h1>
-		<span>Lisa siit oma albumisse pildid:   </span><input class="file"  value="Lisa pildid" type="file" name="pilt" size="40"> 
-		<a class="btn" href="#">Lisa uus album</a> <!-- viib tagasi galerii.html lehele -->
+		<form method="post" enctype="multipart/form-data">
+			<div class="bar group">
+				<input type="text" class="lahter" name="pealkiri" value="Albumi pealkiri">
+			</div>
+			<div class="bar group">
+				<span>Albumi pilt:</span> <input class="file"  value="Lisa pildid" type="file" name="pilt" size="40">
+			</div>
+		</form>
 	</header>
+
+			<div class="bar group">
+				<a class="btn" href="#">Lisa uus album</a> <!-- viib tagasi galerii.html lehele -->
+				<input type="submit" value="Salvesta muudatused" class="btn"></input>
+			</div>
 	<section class="group full blogi">
 	<header><h1>Piltid selles albumis</h1></header>
 		<table id="album" border="0" bordercolor="0" style="background-color:transparent" width="100%" cellpadding="3" cellspacing="3">
@@ -83,8 +94,8 @@
 			</tr>
 
 		</table>
-		<a class="btn" href="#">Kustuta valitud</a>
-		<a class="btn" href="#">Kustuta album</a>
+		<input type="submit" value="Kustuta valitud pildid" class="btn"></input>
+		<input type="submit" value="Kustuta kogu album" class="btn"></input>
 
 
 	</section>
