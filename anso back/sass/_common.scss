@@ -207,3 +207,19 @@ section.full{
 
 
 	}
+
+ul#jarjestus{
+	li{
+		display:block;
+		float:left;
+		padding: 10px;
+		color: $light;
+		background-color: $grey;
+		margin: 10px;
+		cursor: pointer;
+		cursor: hand;
+	}
+}
+p#menu{
+	margin-left: 2%;
+}
