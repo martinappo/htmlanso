@@ -1,0 +1,209 @@
+html, body{
+	min-height: 100%; 
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 400;
+	margin:0px;
+	padding:0px;
+	position:relative;
+	color:$grey;
+	padding-bottom: 20px;
+}
+body:before{
+	position:absolute;
+	content:"";
+	background-color:$grey;
+	left:0px;
+	bottom:10px;
+	top:0px;
+	right:85%;
+	-webkit-border-radius: 0px 0px 10px 0px;
+    border-radius: 0px 0px 10px 0px;
+
+}
+h1{
+	font-weight: 300;
+	font-style:italic;
+	margin-top:0px;
+}
+a{
+	text-decoration:none;
+	color:$blue;
+	&:hover{
+		text-decoration:underline;
+	}
+	&.btn{
+		color:$light;
+		background-color:$blue;
+		line-height:30px;
+		display:inline-block;
+		width:auto;
+		height:30px;
+		padding-left:10px;
+		padding-right:10px;
+		float:right;
+		&:hover{
+			border: solid 1px $blue;
+			color:$blue;
+			background-color:white;
+			height:28px;
+			line-height:28px;
+			text-decoration:none;
+
+		}
+	}
+}
+
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+footer.main{
+	position: fixed;
+	background-color: $grey;
+	height: 40px;
+	width: 100%;
+	bottom:0px;
+	text-align: center;
+	color: #fff;
+	left:0px;
+	div{
+		display: block;
+		line-height: 40px;
+		height: 40px;
+		float:left;
+	}
+	div.crisplogo{
+		height: 40px;
+		width: 70px;
+		background-image: url("../img/logo-crisp.png");
+		-webkit-background-size: contain;
+		-moz-background-size: contain;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center center;
+		margin-left: 50%;
+	}
+}
+
+section.half{
+		width:40%;
+		background-color:$light;
+		min-height:400px;
+		float:left;
+		margin-left:5%;
+		margin-top:5%;
+		margin-bottom: 60px;
+		position:relative;
+		padding-top:20px;
+		header{
+			height:70px;
+			background-color: $grey;
+			padding-top:0px;
+			position:absolute;
+			left:-5px;
+			right:-5px;
+			top:-65px;
+			h1{
+				color:white;
+				font-size: 1em;
+				line-height: 70px;
+				text-align:center;
+			}
+		}
+		article{
+			h1{
+				font-size:1.2em;
+				color: $blue;
+			}
+			p{
+				font-size:0.8em;
+			}
+			a{
+				float:right;
+				text-decoration:none;
+				color: $blue;
+				font-size:0.6em;
+				margin-left: 5px;
+				&:hover{
+					text-decoration:underline;
+				}
+			}
+			padding:2%;
+		}
+
+
+	}
+
+section.login{
+	text-align: center;
+	input{
+		position: inline-block;
+		width: 90%;
+		margin-left: 5%;
+		margin-right: 5%;
+
+	}
+}
+section.full{
+		width:100%;
+		background-color:$light;
+		float:left;
+		margin-top:5%;
+		margin-bottom: 20px;
+		position:relative;
+		padding-top:20px;
+		padding-bottom: 20px;
+		header{
+			height:70px;
+			background-color: $grey;
+			padding-top:0px;
+			position:absolute;
+			left:-5px;
+			right:-5px;
+			top:-65px;
+			h1{
+				color:white;
+				font-size: 1em;
+				line-height: 70px;
+				text-align:center;
+			}
+		}
+		article{
+			h1{
+				font-size:1.2em;
+				color: $blue;
+			}
+			p{
+				font-size:0.8em;
+			}
+			a{
+				float:right;
+				text-decoration:none;
+				color: $blue;
+				font-size:0.6em;
+				margin-left: 5px;
+				&:hover{
+					text-decoration:underline;
+				}
+			}
+			padding:2%;
+		}
+
+		table.hinnakiri{
+			width: 80%;
+			margin-left: auto;
+			margin-right: auto;
+			td{
+				border: solid 1px $grey;
+				padding: 10px;
+				input{
+					border:none;
+				}
+			}
+			
+		}
+
+
+	}

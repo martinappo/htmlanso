@@ -1,0 +1,101 @@
+aside{
+	h1{
+		background-color: #FFF;
+		font-size: 18pt;
+		margin-top: 5px;
+		margin-bottom: 5px;
+		padding-left: 10px;
+	}
+	&:after{
+		content:"";
+		height:20px;
+		width:20px;
+		position:absolute;
+		background-color:$grey;
+		right:-20px;
+		top:0px;
+		z-index:10;
+	}
+	&:before{
+		content:"";
+		height:35px;
+		width:35px;
+		position:absolute;
+		background-color:white;
+		right:-35px;
+		top: 0px;
+		z-index:11;
+		-webkit-border-radius: 35px;
+    	border-radius: 35px;
+	}
+	height:auto;
+	width:15%;
+	background-color: $grey;
+	float:left;
+	position:relative;
+	overflow:visible;
+	nav{
+		margin-top: 25px;
+		width:100%;
+		ul{
+			padding:0px;
+			margin:0px;
+			width:100%;
+			li{
+				&:before{
+					content: "";
+					width: 0; 
+					height: 0; 
+					border-top: 5px solid transparent;
+					border-bottom: 5px solid transparent;
+					border-left: 5px solid white;
+					position:absolute;
+					top:10px;
+					left:5px;
+					}
+				&:hover:before{
+						border-left: 5px solid $grey;
+						z-index:10;
+					}
+				ul{/*alamlist*/
+					li{
+						a{
+							background-color: $light;
+							color:$grey;
+							font-size:0.8em;
+							text-align:left;
+							padding-left:25px;
+							&:hover:after{
+							display:none;
+
+						}
+						
+						}
+					}
+				}
+				width:100%;
+				height:auto;
+				position:relative;
+				z-index: 2;
+				display:block;
+			
+				a{
+					color:white;
+					text-decoration:none;
+					line-height:30px;
+					display:block;
+					padding-left: 20px;
+					position:relative;
+					z-index:6;
+					&:hover{
+						background-color:white;
+						color:$grey;
+						text-decoration:none;
+
+					}
+		
+				}
+			}
+		}
+	}
+}

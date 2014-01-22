@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html class="group">
+<head>
+<title></title>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<!--[if lt IE 9]>
+  <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+</head>
+<body class="group">
+<header class="main">
+	<div class="logo"></div>
+	<h1>Sinu kodulehe adminpaneel</h1>
+</header>
+<aside>
+	<nav>
+		<h1>Talv</h1>
+		<ul>
+		<li><a href="#">Nõlvad</a></li>
+		<li><a href="#">Vahelehed</a>
+			<ul>
+				<li><a href="#">Halda lehti</a></li>
+				<li><a href="#">Lisa leht</a></li>
+			</ul>
+		</li>
+		</ul>
+		<h1>Suvi</h1>
+		<ul>
+		<li><a href="#">Vahelehed</a>
+			<ul>
+				<li><a href="#">Halda lehti</a></li>
+				<li><a href="#">Lisa leht</a></li>
+			</ul>
+		</li>
+		</ul>
+		<h1>Mõlemal</h1>
+		<ul>
+		<li><a href="#">Hinnakiri</a></li>
+		<li><a href="#">Uudised</a>
+			<ul>
+				<li><a href="#">Halda uudiseid</a></li>
+				<li><a href="#">Lisa uudis</a></li>
+			</ul>
+		</li>
+		<li><a href="#">Kontakt</a></li>
+		</ul>
+	</nav>
+</aside>
+<section id="index" class="group">
+	<header class="group">
+		<h1>Lisa leht</h1>
+	</header>
+	<section class="group full">
+		<header><h1>Kirjuta sisu</h1></header>
+		<input type="text" class="lahter" name="pealkiri" placeholder="Pealkiri"><br>
+		<textarea placeholder="Sisu" class="sisu"></textarea>
+		<div class="right">
+			<h1>Vali asukoht</h1>
+			<ul class="kat">
+				<li><input type="checkbox" name="vali" value="kategooria">Peamenüü</li>
+				<li><input type="checkbox" name="vali" value="kategooria">Kõrvalmenüü</li>
+			</ul>
+			<h1>Vali iseloomustav pilt</h1>
+			<input class="file" type="file" name="pilt" size="40"> 
+		</div>
+		<input type="button" class="btn" value="Lisa leht"></input>
+		<input type="button" class="btn" value="Kustuta leht"></input>
+	</section>
+
+
+	<section class="group full">
+		<header><h1>Muuda hinnakirja</h1></header>
+		<table class="hinnakiri">
+		<tr>
+			<td colspan="3" class="head1"><input type="text" name="pealkiri" value="Mäe hinnakiri"></td>
+		</tr>
+
+	    <tr class="head2">
+	        <td><input type="text" name="pealkiri" value="Vanus"></td>
+	        <td><input type="text" name="pealkiri" value="Aeg"></td>
+	        <td><input type="text" name="pealkiri" value="Hind"></td>
+	    </tr>
+	    <tr>
+	        <td rowspan="4"><input type="text" name="pealkiri" value="Täiskasvanud"> <br> <input type="text" name="pealkiri" value="(alates 13)"></td>
+	        <td rowspan="2"><input type="text" name="pealkiri" value="E-R"></td>
+	        <td class="hind"><input type="text" name="pealkiri" value="10eur / 3H"></td>
+	    </tr>
+	    <tr>
+	        <td class="hind"><input type="text" name="pealkiri" value="12eur / päev"></td>
+	    </tr>
+	    <tr>
+	        <td rowspan="2"><input type="text" name="pealkiri" value="L-P"></td>
+	        <td class="hind"><input type="text" name="pealkiri" value="12eur / 3h"></td>
+	    </tr>
+	    <tr>
+	        <td class="hind"><input type="text" name="pealkiri" value="15eur / päev"></td>
+	    </tr>
+	    <tr>
+	        <td rowspan="4"><input type="text" name="pealkiri" value="Lapsed"> <br> <input type="text" name="pealkiri" value="(kuni 12)"></td>
+	        <td rowspan="2"><input type="text" name="pealkiri" value="E-R"></td>
+	        <td class="hind"><input type="text" name="pealkiri" value="8eur / 3H"></td>
+	    </tr>
+	    <tr>
+	        <td class="hind"><input type="text" name="pealkiri" value="10eur / päev"></td>
+	    </tr>
+	    <tr>
+	        <td rowspan="2"><input type="text" name="pealkiri" value="L-P"></td>
+	        <td class="hind"><input type="text" name="pealkiri" value="10eur / 3H"></td>
+	    </tr>
+	    <tr>
+	        <td class="hind"><input type="text" name="pealkiri" value="12eur / päev"></td>
+	    </tr>
+	</table>
+		<input type="button" class="btn" value="Muuda"></input>
+	</section>
+
+
+
+	
+	
+	
+</section>
+</body>
+</html>

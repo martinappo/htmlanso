@@ -1,0 +1,133 @@
+section.blogi{
+
+	tr.head {
+		border-bottom:none;
+		color:$blue;
+		font-style: italic;
+		font-size:1.2em;
+		td{
+			height:50px;
+			background-color:white;
+		}
+	}
+	tr{
+		border-bottom: solid 1px $grey;
+		td{
+			height:35px;
+			padding-left:20px;
+			a{
+
+			}
+		}
+
+	}
+	table{
+		margin-bottom: 20px;
+	}
+	table#album{
+		tr{
+			td{
+				height: 70px;
+				.thumb{
+					height:70px;
+					width: 100px;
+					background-repeat: no-repeat;
+					-webkit-background-size: contain;
+					-moz-background-size: contain;
+					background-size: contain;
+					margin: 5px;
+					
+				}
+			}
+		}
+	}
+	a.btn{
+		margin-right:10px;
+
+		&:hover{
+			background-color:$light;
+		}
+	}
+}
+input.btn{
+	display: block;
+	width: 100px;
+	float:right;
+	margin-right: 25px;
+	background-color:$blue;
+	border:none;
+	color: #fff;
+	height: 30px;
+	line-height: 30px;
+	padding: 0;
+	&:hover{
+		background-color: $grey;
+	}
+}
+input.lahter{
+	width:70%;
+	margin-left:2%;
+	margin-right:auto;
+	float:left;
+	display:block;
+	margin-top:20px;
+	padding:10px;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+	outline:none;
+	margin-bottom: 20px;
+	border: solid 1px $grey;
+}
+	textarea#vidtutv{
+	margin-left: 2%;
+	margin-bottom: 2%;
+	width: 68%;
+	height: 100px;
+	padding: 10px;
+	}
+
+textarea.sisu{
+	margin-left:2%;
+	margin-right:auto;
+	float:left;
+	height:500px;
+	width:70%;
+	display:block;
+	padding:10px;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+	margin-bottom: 20px;
+	outline:none;
+	border: solid 1px $grey;
+}
+ul{
+	list-style-type:none;
+}
+.right{
+	background-color:white;
+	border: 1px solid #ccc;
+	padding:2%;
+	float:right;
+	width:20%;
+	margin-right:2%;
+	margin-bottom:20px;
+	h1{
+		font-size:1.2em;
+	}
+	input.file{
+		width: 100%;
+	}
+
+	ul{
+		margin:0px 0px 20px 20px;
+		padding:0px;
+		li{
+			line-height:25px;
+			input{
+				margin-right:10px;
+			}
+		}
+	}
+}

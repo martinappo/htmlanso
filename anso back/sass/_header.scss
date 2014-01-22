@@ -1,0 +1,35 @@
+header.main{
+
+	width:100%;
+	background-color: $grey;
+	height:95px;
+	position:relative;
+	h1{
+		color:white;
+		margin:0px;
+		text-align:left;
+		width:50%;
+		line-height:2;
+		height:100%;
+		float:right;
+	}
+	.logo{
+		background-image: url(../img/logo.png);
+		height:80%;
+		width:208px;
+		margin-left: 10px;
+		margin-top: 10px;
+		-webkit-background-size: contain;
+		-moz-background-size: contain;
+		background-size: contain;
+		background-color: #FFF;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+		background-position:center center;
+		background-repeat: no-repeat;
+		float:left;
+		
+
+	}
+}
