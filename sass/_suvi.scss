@@ -9,8 +9,32 @@ a.koik{
 	color: $suvi;
 }
 
+
 nav.main{
 		background-color: $suvi;
+ul {
+
+		&:after{
+				content:"";
+				height: 5px;
+				width: 5px;
+				background-color: $suvi !important;
+				position: absolute;
+				right: 0px;
+				top: -5px;
+			}
+		&:before{
+				content:"";
+				height: 5px;
+				width: 5px;
+				background-color: $suvi !important;
+				position: absolute;
+				left: 0px;
+				top: -5px;
+			}
+
+}
+	
 	}
 
 section.middle{

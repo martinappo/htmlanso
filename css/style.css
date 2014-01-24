@@ -1287,6 +1287,24 @@ nav.arhiiv ul li a:hover {
 .wrapper#suvi nav.main {
   background-color: rgba(226, 172, 0, 0.78);
 }
+.wrapper#suvi nav.main ul:after {
+  content: "";
+  height: 5px;
+  width: 5px;
+  background-color: rgba(226, 172, 0, 0.78) !important;
+  position: absolute;
+  right: 0px;
+  top: -5px;
+}
+.wrapper#suvi nav.main ul:before {
+  content: "";
+  height: 5px;
+  width: 5px;
+  background-color: rgba(226, 172, 0, 0.78) !important;
+  position: absolute;
+  left: 0px;
+  top: -5px;
+}
 .wrapper#suvi section.middle a.reaalajas:after {
   background-color: rgba(226, 172, 0, 0.78);
 }
