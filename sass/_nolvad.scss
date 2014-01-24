@@ -3,7 +3,9 @@ section#nolvad{
 	.left{
 		padding-bottom: 25px;
 		.nolv{
-
+			&:last-of-type{
+				margin-bottom: 25px;
+			}
 			height: 38px;
 			width: 100%;
 			position: relative;

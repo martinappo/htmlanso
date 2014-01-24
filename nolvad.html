@@ -8,59 +8,8 @@
 <![endif]-->
 <script src="js/jquery.min.js"></script>
 <script src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
+<script type="text/javascript" src="js/jscript.js"></script>
 
-<script type="text/javascript">
-
-$(document).ready(function(){
-/****************************
-*****************************
-
-Main slider
-
-*****************************
-****************************/
-
-
-
-$(".slogancontainer").carouFredSel({
-	responsive:true,
-	height: 220,
-	width: "62%",
-	circular: true,
-	infinite: true,
-	scroll: {
-		fx : "cover-fade"
-	},
-	
-	items: {
-		visible: 1,
-		start: "random",
-		height: 220
-	},
-	
-	auto: 3000,
-	next: {
-		button: "#next",
-		key: "right"
-	}
-});
-
-/** nolvad kirjeldus **/
-
-
-	$('.nolv').click(function() {
-	   $(this).toggleClass("show");
-
-	});
-
-$('.nolv').mouseleave(function() {
-	   $(this).removeClass("show");
-
-	});
-
-}); /* <--- ready function end*/
-
-</script>
 
 </head>
 <body>
@@ -84,6 +33,7 @@ $('.nolv').mouseleave(function() {
 	</section><!-- right -->
 </header><!-- mainheader -->
 <nav class="main">
+		<div class="openmenu open">Menüü</div>
 		<ul>
 			<li><a href="">AVALEHT</a></li>
 			<li><a href="">HINNAKIRI</a></li>
@@ -100,7 +50,7 @@ $('.nolv').mouseleave(function() {
 	<div class="slogancontainer">
 		<div class="slogan"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, animi voluptatem tempore ad aliquam natus. Architecto minima aperiam iusto necessitatibus.</p></div>
 		<div class="slogan"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, animi voluptatem tempore ad aliquam natus. Architecto minima aperiam iusto necessitatibus.</p></div>
-		<div class="slogan"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, animi voluptatem tempore ad aliquam natus. Architecto minima aperiam iusto necessitatibus.</p></div>
+		<div class="slogan"><p>Lorem ipsulorem	m dolor sit amet, consectetur adipisicing elit. Maxime, animi voluptatem tempore ad aliquam natus. Architecto minima aperiam iusto necessitatibus.</p></div>
 	</div><!-- slogancontainer-->
 	<a href="" class="reaalajas">Jälgi meid reaalajas!</a>
 </section><!--middle-->

@@ -1,29 +1,236 @@
 @media screen and (max-width: 1220px) {
+nav.main{
+		ul{
+			
+			li{
+				margin-left: 15px;
+				margin-right: 15px;
+			}
+		}
+	}
+} //media screen 1220
+
+@media screen and (max-width: 1080px) {
+	html{
+		body{
+			.wrapper{
+				width: 90%;
+				margin-left: auto;
+				margin-right: auto;
+				position: relative;
+				
+			}
+		}
+	}
+} //media screen 1080
+
+
+@media screen and (max-width: 820px) {
+
+//majutus
+
+section#majutus{
+	padding-bottom: 20px;
+	.right{
+		padding-top: 0px;
+		width: 100%;
+		padding-right: 2%;
+	}
+	.left{
+		width: 100%;
+		padding-top: 20px;
+	}
+	header{
+		padding-top: 25px;
+		padding-bottom: 20px;
+	}
+	table.hinnakiri{
+		margin-left: -5px;
+		width: 100%;
+		border-spacing: 5px;
+   		border-collapse: separate;
+   		tr.head2{
+   			td{
+   				background-color: #89aaef;
+   			}
+   		}
+		td{
+			background-color: $hinnakiri;
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			border-radius: 5px;
+			height: 25px;
+			border: none;
+			padding-left: 0px;
+			padding-right: 0px;
+			padding-top: 5px;
+			color: #fff;
+			text-transform: uppercase;
+			text-align: center;
+			&.head1{
+				height: 30px;
+				line-height: 30px;
+			}
+			&.hind{
+				background-color: #d2def8;
+				color: $hall;
+			}
+		}
+	}
+}
+
+
+//ARHIIV
+
+nav.arhiiv{
+	float:none;
+	margin-right: 25px;
+	ul{
+		list-style-type: none;
+		width: 100%;
+		padding: 0;
+		margin: 0;
+		li{
+			text-align: center;
+			a{
+				text-transform: uppercase;
+				text-decoration: none;
+				line-height: 1.2;
+				font-family: 'tepeno_sansbold';
+				font-size: 15pt;
+				display: block;
+				line-height: 1.5;
+
+				&:hover{
+					color: $hall;
+				}
+			}
+		}
+	}
+}
+
+
+nav.main{
+	height:auto;
+		.openmenu{
+			&.open{
+				visibility: visible;
+				display: block;
+				position: relative;
+			}
+			z-index: 5;
+			display:block;
+			cursor: hand;
+			cursor: pointer;
+			width: 30%;
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;
+			color: #fff;
+			position: absolute;
+			padding-top: 5px;
+			padding-bottom: 15px;
+			bottom: 0px;
+			left: 50%;
+			margin-left: -15%;
+				&:before{
+					content:"";
+					position: absolute;
+					left: 50%;
+					margin-left: -8px;
+					bottom: 5px;
+					display:block;
+					width: 0px;
+					height: 0px;
+					border-style: solid;
+					border-width: 8px 8px 0px 8px;
+					border-color:#FFF transparent transparent transparent;
+					opacity: 1;
+					z-index: 2;
+
+				}
+		}
+		ul{
+			height: auto;
+			overflow:hidden;
+			&.open li{
+					height:auto;
+			}
+			li{
+				display: block;
+				float:left;
+				width: 50%;
+				margin-left: 0px;
+				margin-right: 0px;
+				overflow:hidden;
+				height: 0px;
+
+				&.active:before, &:hover:before{
+						
+						display: none;
+					
+				}
+				a{
+					line-height: 40px;
+					display: block;
+					color: #fff;
+					text-decoration: none;
+					text-transform: uppercase;
+					font-family: 'tepeno_sansbold';
+					font-size: 11pt;
+				}
+			}
+		}
+	}
+
+section.middle{
+	display:none;	
+}
+} //media screen 820
+
+
+@media screen and (max-width: 820px) {  
+
 	header.main{
+	position: relative;
+	background-color: rgba(255, 255, 255, 0.92);
+	-webkit-border-radius: 0px 0px 5px 5px;
+	-moz-border-radius: 0px 0px 5px 5px;
+	border-radius: 0px 0px 5px 5px;
+	height: 200px;
+	z-index: 2;
+	color: $hall;
+	.openmenu{
+		display:none;
+	}
 	.logo{
-		float:left;
-		height: 100%;
-		width: 225px;
+		float:none;
+		height: 50%;
+		width: 96%;
 		background-position: center center;
-		margin-left: 28px;
+		margin-left: 2%;
+		margin-right: 2%;
 		background-image: url("../img/logo_transparent.png");
 		background-repeat: no-repeat;
 		-webkit-background-size: contain;
 		-moz-background-size: contain;
 		background-size: contain;
+		
 	}
 	.ilmateade{
+		margin-left: 0px;
+		width: 45%;
+		margin-left: 5%;
 		float:left;
-		margin-left: 38px;
-		padding-top: 25px;
-		font-size: 10.5pt;
+		padding-top: 10px;
+		font-size: 13pt;
 		background-image: url("../img/ilm.png");
 		background-repeat: no-repeat;
-		background-position: right bottom;
+		background-position: 60% 100%;
 		.avatud{
 			text-transform: uppercase;
 			margin-bottom: 15px;
-			font-size: 11pt;
+			font-size: 13pt;
 
 		}
 		.ilm{
@@ -34,19 +241,22 @@
 	}
 	section.right{
 		float:right;
-		margin-right: 20px;
-		height: 100%;
+		margin-right: 0px;
+		width: 45%;
+		margin-right: 5%;
+		height: auto;
+		padding: 0px;
 		a.wakepark{
 			text-decoration: none;
 			color: $hall;
-			font-size: 11pt;
-			text-align: left;
+			font-size: 13pt;
+			text-align: right;
 			display: block;
-			padding-right: 50px;
+			padding-right:0px;
 			clear:both;
 		}
 		.hooaeg{
-			font-size: 11pt;
+			font-size: 13pt;
 			height: 27px;
 			padding-top: 10px;
 			line-height: 27px;
@@ -76,162 +286,850 @@
 	
 }
 
-nav.main{
-		background-color: $helesinine;
-		width: 100%;
-		height: 40px;
-		-webkit-border-radius: 0px 0px 5px 5px;
-		-moz-border-radius: 0px 0px 5px 5px;
-		border-radius: 0px 0px 5px 5px;
-		opacity: 0.9;
-		z-index: 1;
-		margin-top: 0px;
-		clip: rect(5px 0px 0px 0px);
-		position: relative;
-		ul{
-			padding: 0;
-			margin: 0;
-			width: 100%;
-			height: 40px;
-			list-style-type: none;
-			text-align: center;
-			padding-top: 0px;
-			white-space: nowrap;
-			&:after{
-				content:"";
-				height: 5px;
-				width: 5px;
-				background-color: $helesinine;
-				position: absolute;
-				right: 0px;
-				top: -5px;
-			}
-			&:before{
-				content:"";
-				height: 5px;
-				width: 5px;
-				background-color: $helesinine;
-				position: absolute;
-				left: 0px;
-				top: -5px;
-			}
-			li{
-				height: 40px;
-				padding: 0;
-				margin: 0;
-				display: inline-block;
-				margin-left: 20px;
-				margin-right: 20px;
+// sisu osa *******************************************************
+
+html{
+		body{
+			.wrapper{
+				width: 95%;
+				margin-left: auto;
+				margin-right: auto;
 				position: relative;
-
-				&:before{
-					content:"";
-					position: absolute;
-					left: 50%;
-					margin-left: -8px;
-					display:none;
-					width: 0px;
-					height: 0px;
-					border-style: solid;
-					border-width: 8px 8px 0 8px;
-					border-color:#FFF transparent transparent transparent;
-					opacity: 1;
-					z-index: 2;
-
-				}
-				&.active:before, &:hover:before{
-					
-						display: block;
-					
-				}
-				a{
-					line-height: 40px;
-					display: block;
-					color: #fff;
-					text-decoration: none;
-					text-transform: uppercase;
-					font-family: 'tepeno_sansbold';
-					font-size: 11pt;
-				}
+				
 			}
 		}
 	}
 
-section.middle{
-	height: 250px;
-	width: 100%;
+
+section.content{
 	position: relative;
-	a.reaalajas{
-		display:block;
-		position: absolute;
-		height: 50px;
-		line-height: 50px;
-		width: 30%;
-		right: 0px;
-		bottom: 50px;
-		color: #fff;
-		text-transform: uppercase;
-		text-decoration: none;
-		text-align: center;
-		font-family: 'tepeno_sansbold';
-		font-size: 15pt;
-		white-space: nowrap;
-		&:after{
-			content:"";
-			position: absolute;
-			top: 0;
-			opacity: 0.9;
-			bottom: 0;
-			left: 0;
-			right: 0;
+	padding-left: 25px;
+	background-image: url("../img/content-bg.png");
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	header{
+			width: 100%;
+			position: relative;
+			h1{
+				color: $headerhall;
+				text-transform: uppercase;
+				font-family: 'tepeno_sansbold';
+				 font-size: 15pt;
+				 text-align: center;
+				 margin: 0;
+				 padding: 0;
+				 font-weight: normal;
+			}
+	}
+	.right{
+		float:right;
+		padding-top: 20px;
+		a.imglink{
+			height: 100px;
+			width: 70%;
+			margin-right: auto;
+			margin-left: auto;
 			display: block;
-			background-color: $helesinine;
-			z-index: -1;
+			background-repeat: no-repeat;
+			background-position: center center;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			background-size: cover;
+			-webkit-border-radius: 5px 5px 5px 5px;
+			-moz-border-radius: 5px 5px 5px 5px;
+			border-radius: 5px 5px 5px 5px;
+			margin-top: 12px;
+			position: relative;
+			padding: 0px;
+			span{
+				position: absolute;
+				-webkit-hyphens: auto;
+				   -moz-hyphens: auto;
+				    -ms-hyphens: auto;
+				        hyphens: auto;
+				word-break:break-word;
+				bottom: 5px;
+				right: 20px;
+				color: #fff;
+				text-shadow: 1px 1px 2px #454545;
+				font-size: 18pt;
+				text-align: center;
+
+
+			}
+			&:first-of-type{
+				margin-top: 0px;
+			}
+		}
+	}
+	.left{
+		width: 100%;
+		padding-right: 3%;
+		padding-left: 3%;
+		margin-left: 0;
+		margin-right: 0;
+		padding-top: 25px;
+		float:right;
+		article{
+			color:#323337;
+			font-size: 15pt;
+			text-align: justify;
+			&:nth-of-type(1){
+				padding-top: 0px;
+			}
+			&:last-of-type{
+				padding-bottom: 15px;
+			}
+			p:nth-of-type(1){
+				margin-top: 0;
+				padding-top: 0;
+			}
+			p:last-of-type{
+				padding-bottom: 0px;
+				margin-bottom: 0px;
+			}
+			h1{
+				font-weight: normal;
+				font-size: 15pt;
+				font-family: 'tepeno_sansbold';
+				margin-top: 0;
+				margin-bottom: 0px;
+				padding: 0;
+				text-align: center;
+			}
+			p{
+				line-height: 1.3;
+			}
+		}
+		a.koik{
+			float:right;
+			color:$helesinine;
+			text-transform: uppercase;
+			text-decoration: none;
+			font-family: 'tepeno_sansbold';
+			font-size: 18pt;
+			margin-bottom: 20px;
+		}
+		a.loe{
+			float:right;
+			color:$helesinine;
+			text-decoration: none;
+		}
+	}
+	.right{
+		width: 100%;
+	}
+	&:before{
+		content:"";
+		position: absolute;
+		bottom: -43px;
+		width: 100%;
+		height: 43px;
+		background-image: url("../img/sisu-vari.png");
+		background-position: center center;
+		background-repeat: no-repeat;
+		left:0px;
+	}
+}
+
+/******** footer ************************/
+
+
+
+footer.main{
+	width: 100%;
+	color: $hall;
+	text-shadow: 0px 1px 1px 5px $hall;
+	margin-top: 35px;
+	padding-bottom: 70px;
+	height: 200px;
+	.footersection{
+		float:none;
+		height: 200px;
+		&.right{
+			width: 100%;
+			padding-left: 2%;
+			h1{
+				width: 100%;
+				margin: 0;
+				padding: 0;
+				font-size: 11pt;
+				font-weight:  normal;
+			}
+			.toetaja{
+				width: 100%;
+				height: 40px;
+				background-image: url("../img/toetaja.png");
+				background-repeat: no-repeat;
+				background-position: center center;
+				margin-top: 10px;
+				margin-bottom: 10px;
+
+			}
+		}
+		&.middle{
+			width: 100%;
+			a.larger{
+				color: $helesinine !important;
+			}
+		}
+		&.left{
+			width: 100%;
+			padding-right: 0%;
+			background-color: rgba(255, 255, 255, 0.82);
 			-webkit-border-radius: 5px;
 			-moz-border-radius: 5px;
 			border-radius: 5px;
-		}
+			padding-top: 10px;
 
-	}
-	#next{
-		height: 250px;
-		position: absolute;
-		left: 0;
-		bottom: 0;
-		width: 62%;
-		background-color: transparent;
-		z-index: 2;
-		cursor: hand;
-		cursor: pointer;
-	}
-	.slogancontainer{
-		margin-left: 25px;
-		font-size: 22pt;
-		height: 250px;
-		display: block;
-		position: relative;
-		width: 50%;
-		float:left;
-		div.slogan{
-			height: 220px;
-			padding-top: 10px;	
-			float:left;
-			display:block;
-			bottom: 5px;
-			position: relative;
-			p{
-				text-transform: uppercase;
-				color: #FFF;
-				text-shadow: 0px 2px 2px rgba(133, 133, 133, 0.72);
-				text-align: left;
-				bottom: 5px;
-				position: absolute;
+			.social{
+				width: 100%;
+				clear:both;
+				a.facebook{
+					display:block;
+					width: 28px;
+					height: 28px;
+					background-image: url("../img/facebook.png");
+					background-repeat: no-repeat;
+					margin-left: auto;
+					margin-right: auto;
+
+				}
+			}
+			h1{
+				float:none;
+				width: 100%;
 				margin: 0;
-				line-height: 1;
+				padding-bottom: 5px;
+				font-size: 18pt;
+				font-weight:  normal;
+				text-align: center;
+				text-indent:0px;
+
+			}
+			.kontaktid{
+				float:none;
+				width: 100%;
+				text-align: center;
+				font-size: 15pt;
+				span{
+					margin-bottom: 20px;
+					display:block;
+				}
+			}
+		}
+	}
+}
+
+
+/* hinnakiri ******************/
+
+
+section#hinnakiri{
+	padding-bottom: 20px;
+	.right{
+		padding-top: 0px;
+		width: 98%;
+		padding-right: 4%;
+		margin-bottom: 15px;
+	}
+	.left{
+		margin-bottom: 15px;
+		padding-top: 0px;
+	}
+	font-size: 15pt;
+
+		header{
+			padding-top: 20px;
+			width: 100%;
+			position: relative;
+			margin-bottom: 15px;
+			h1{
+				color: $headerhall;
+				text-transform: uppercase;
+				 font-family: 'tepeno_sansbold';
+				 font-size: 15pt;
+				 text-align: center;
+				 margin: 0;
+				 padding: 0;
+				 font-weight: normal;
+			}
+	}
+
+	table.hinnakiri{
+   		tr.head2{
+   			td{
+   				background-color: $hinnakiri;
+   				opacity: 0.7;
+   			}
+   		}
+		td{
+			background-color: $hinnakiri;
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			border-radius: 5px;
+			height: 25px;
+			border: none;
+			font-size: 13pt;
+			padding-left: 0px;
+			padding-right: 0px;
+			padding-top: 5px;
+			color: #fff;
+			text-transform: uppercase;
+			text-align: center;
+			&.head1{
+				height: 30px;
+				line-height: 30px;
+			}
+			&.hind{
+				background-color: #d2def8;
+				color: $hall;
 			}
 			
 		}
 	}
+
+}
+
+
+} // 820
+
+
+
+@media screen and (max-width: 500px) {  
+
+	header.main{
+	position: relative;
+	background-color: rgba(255, 255, 255, 0.92);
+	-webkit-border-radius: 0px 0px 5px 5px;
+	-moz-border-radius: 0px 0px 5px 5px;
+	border-radius: 0px 0px 5px 5px;
+	height: 270px;
+	z-index: 2;
+	color: $hall;
+	.openmenu{
+		display:none;
+	}
+	.logo{
+		float:none;
+		height: 30%;
+		width: 96%;
+		background-position: center center;
+		margin-left: 2%;
+		margin-right: 2%;
+		background-image: url("../img/logo_transparent.png");
+		background-repeat: no-repeat;
+		-webkit-background-size: contain;
+		-moz-background-size: contain;
+		background-size: contain;
+		
+	}
+	.ilmateade{
+		margin-left: 0px;
+		width: 90%;
+		margin-left: 5%;
+		margin-right: 5%;
+		float:none;
+		padding-top: 10px;
+		font-size: 13pt;
+		background-image: url("../img/ilm.png");
+		background-repeat: no-repeat;
+		background-position: 10px 100%;
+		text-align: center;
+		.avatud{
+			text-transform: uppercase;
+			margin-bottom: 15px;
+			font-size: 13pt;
+
+		}
+		.ilm{
+			span.caps{
+				margin-right: 5px;
+			}
+		}
+	}
+	section.right{
+		text-align: center;
+		float:none;
+		margin-right: 0px;
+		width: 90%;
+		margin-right: 5%;
+		margin-left: 5%;
+		height: auto;
+		padding: 0px;
+		a.wakepark{
+			text-decoration: none;
+			color: $hall;
+			font-size: 13pt;
+			text-align: center;
+			display: block;
+			padding-right:0px;
+			clear:both;
+		}
+		.hooaeg{
+			font-size: 13pt;
+			height: auto;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			line-height: 27px;
+			margin-bottom: 10px;
+			margin-top: 10px;
+			text-align: center;
+			float:none;
+			height: 27px;
+			width: 60%;
+			padding-left: 20%;
+			padding-right: 20%;
+			border-top: 1px solid $helesinine;
+			border-bottom: 1px solid $helesinine;
+			text-align: center;
+			position: relative;
+			span{
+				float:none;
+				margin-right: 0px;
+				display:none;
+			}
+			a.suvi, a.talv{
+				height:27px;
+				width: 27px;
+				margin-right: 5px;
+				margin-left: 5px;
+				background-repeat: no-repeat;
+				background-position: center center;
+				float:none;
+				display:inline-block;
+			}
+			a.suvi{
+				background-image: url("../img/hooaeg-suvi.png");
+
+			}
+			a.talv{
+				background-image: url("../img/hooaeg-talv.png");
+			}
+		}
+	}
 	
 }
+
+
+// sisu osa *********************************
+
+
+section.content{
+	position: relative;
+	padding-left: 25px;
+	background-image: url("../img/content-bg.png");
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	header{
+			width: 100%;
+			position: relative;
+			h1{
+				color: $headerhall;
+				text-transform: uppercase;
+				font-family: 'tepeno_sansbold';
+				 font-size: 18pt;
+				 margin: 0;
+				 padding: 0;
+				 font-weight: normal;
+			}
+	}
+	.right{
+		float:right;
+		padding-top: 20px;
+		a.imglink{
+			height: 100px;
+			width: 90%;
+			margin-right: auto;
+			margin-left: auto;
+			display: block;
+			background-repeat: no-repeat;
+			background-position: center center;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			background-size: cover;
+			-webkit-border-radius: 5px 5px 5px 5px;
+			-moz-border-radius: 5px 5px 5px 5px;
+			border-radius: 5px 5px 5px 5px;
+			margin-top: 12px;
+			position: relative;
+			padding: 0px;
+			span{
+				position: absolute;
+				-webkit-hyphens: auto;
+				   -moz-hyphens: auto;
+				    -ms-hyphens: auto;
+				        hyphens: auto;
+				word-break:break-word;
+				bottom: 5px;
+				right: 20px;
+				color: #fff;
+				text-shadow: 1px 1px 2px #454545;
+				font-size: 18pt;
+				text-align: center;
+
+
+			}
+			&:first-of-type{
+				margin-top: 0px;
+			}
+		}
+	}
+	
+	.right{
+		width: 100%;
+	}
+	&:before{
+		content:"";
+		position: absolute;
+		bottom: -43px;
+		width: 100%;
+		height: 43px;
+		background-image: url("../img/sisu-vari.png");
+		background-position: center center;
+		background-repeat: no-repeat;
+		left:0px;
+	}
 }
+/* arhiv*/
+
+
+//ARHIIV
+
+nav.arhiiv{
+	float:none;
+	margin-right: 25px;
+	ul{
+		list-style-type: none;
+		width: 100%;
+		padding: 0;
+		margin: 0;
+		li{
+			text-align: center;
+			a{
+				text-transform: uppercase;
+				text-decoration: none;
+				line-height: 1.2;
+				font-family: 'tepeno_sansbold';
+				font-size: 15pt;
+				display: block;
+				line-height: 1.5;
+
+				&:hover{
+					color: $hall;
+				}
+			}
+		}
+	}
+}
+/********************** nolvad ***********************/
+
+
+section#nolvad{
+
+	.left{
+		padding-bottom: 25px;
+		.nolv{
+			&:last-of-type{
+				margin-bottom: 25px;
+			}
+			height: 50px;
+			width: 100%;
+			position: relative;
+			margin-bottom: 5px;
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			border-radius: 5px;
+			background-image: url("../img/nolv-bg.png");
+			cursor: hover;
+			cursor: pointer;
+			div, a{
+				display: block;
+				text-align: left;
+				height: 50px;
+				float:left;
+				line-height: 50px;
+				text-transform: uppercase;
+				 font-family: 'tepeno_sansbold';
+				 font-size: 12pt;
+			}
+			&.show article.kirjeldus{
+				display:block;
+				visibility: visible;
+				opacity: 1;
+				position: fixed;
+				width: 88%;
+				height: 90%;
+				left: 50%;
+				margin-left: -44%;
+
+			}
+			article.kirjeldus{
+				background-image: url("../img/n-kirj-bg.png");
+				width: 96%;
+				padding: 1%;
+				position: fixed;
+				visibility: hidden;
+				opacity: 0;
+				z-index: 3;
+				-webkit-border-radius: 5px;
+				-moz-border-radius: 5px;
+				border-radius: 5px;
+				top: 38px;
+				color: #fff;
+				 font-family: 'tepeno_sansregular';
+				 -webkit-transition: all 300ms ease;
+-moz-transition: all 300ms ease;
+-ms-transition: all 300ms ease;
+-o-transition: all 300ms ease;
+transition: all 300ms ease;
+
+				 p{
+				 	padding-top: 10px;
+				 	padding-bottom: 10px;
+				 	margin: 0;
+				 }
+			}
+			.ikoon{
+				width: 11.260714%;
+				background-position: center center;
+				background-repeat: no-repeat;
+				
+			}
+			.nimi{
+				width: 26.547214%;
+				color: #fff;
+				display:none;
+			}
+			.nimetus{
+				width: 46.86428%;
+				color: $helesinine;
+			}
+			.video{
+				width: 17%;
+				background-image: url("../img/video.png");
+				background-repeat: no-repeat;
+				background-position: center center;
+				position: relative;
+				&:hover:after{
+					display: block;
+				}
+				&:after{
+					content:"Sõida nõlv läbi";
+					display:none;
+					height: 20px;
+					line-height: 20px;
+					position: absolute;
+					color: $helesinine;
+					text-align: center;
+					padding-left: 5px;
+					padding-right: 5px;
+					font-size: 9pt;
+					text-transform: none;
+					top: 50%;
+					margin-top: -10px;
+					left: -100%;
+					-webkit-border-radius: 3px;
+					-moz-border-radius: 3px;
+					border-radius: 3px;
+					background-color: #FFF;
+
+				}
+			}
+
+			.staatus{
+				width: 24.29285%;
+				&.avatud{
+					color: #6fb121;
+				}
+				&.suletud{
+					color: $hall;
+				}
+			}
+		}
+		header{
+			width: 100%;
+			position: relative;
+			margin-bottom: 20px;
+			h1{
+				color: $headerhall;
+				text-transform: uppercase;
+				 font-family: 'tepeno_sansbold';
+				 font-size: 15pt;
+				 text-align: center;
+				 margin: 0;
+				 padding: 0;
+
+			}
+			h1.h1left{
+				float:none;
+				width: 100%;
+				display: block;
+			}
+			h1.h1right{
+				float:none;
+				width: 100%;
+				display: block;
+				text-align: center;
+				font-size: 13pt;
+				color: $helesinine;
+				text-transform: none;
+			}
+		}
+	}
+	.right{
+		padding-top: 50px;
+		padding-bottom: 25px;
+		a.kaameralink{
+			color: $helesinine;
+			text-transform: uppercase;
+			 font-family: 'tepeno_sansbold';
+			 text-decoration: none;
+			 width: 100%;
+			 display: block;
+			 line-height: 90px;
+			 text-align: center;
+			 font-size: 15pt;
+		}
+	}
+}
+
+
+
+
+// galerii  ********************************
+section#galerii{
+	padding-left: 0px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	header{
+		padding-left: 0px;
+		padding-top: 0px;
+		text-align: center;
+		h1{
+			font-size: 18pt;
+		}
+		
+	}
+	.left#albumid{
+		a.album:nth-child(3n+2){
+			margin-right: 0%;
+			margin-left: 0%;
+		}
+	}
+	/* single album */
+	.left#album{
+		a.pilt{
+			display: block;
+			width: 100%;
+			height: 150px;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			background-size: cover;
+			
+			float:none;
+			margin-right: 0%;
+			margin-bottom: 2%;
+		}
+	}
+	.video{
+		width: 100%;
+
+		margin-bottom: 20px;
+		iframe, .tutvustus {
+			float:none;
+			width: 100%;
+		}
+		.tutvustus{
+			width: 100%;
+			padding-left: 0%;
+			text-align: justify;
+			font-size: 15pt;
+			h1{
+				color: $helesinine;
+				margin: 0;
+				padding: 0;
+				margin-bottom: 15px;
+				font-size: 18pt;
+				text-transform: uppercase;
+				font-family: 'tepeno_sansbold';
+				text-align: center;
+				padding-top: 10px;
+			}
+		}
+	}
+	a.album{
+			display:inline-block;
+			float:left;
+			width: 100%;
+			height: 100px;
+			background-repeat: no-repeat;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			background-size: cover;
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			border-radius: 5px;
+			margin-bottom: 5px;
+			color: #fff;
+			text-shadow: 1px 1px 2px #454545;
+			text-decoration: none;
+			text-transform: uppercase;
+			line-height: 150px;
+			text-align: center;
+			font-size: 20pt;
+			white-space: nowrap;
+			
+		}
+	nav.galerii{
+		padding-left: 0px;
+		ul{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			li{
+				float:none;
+				margin-right: 0px;
+				text-align: center;
+				padding: 0;
+				margin-left: 0;
+				margin-bottom: 5px;
+				
+					border-bottom: solid 1px $helesinine;
+				
+				&.ui-tabs-active{
+					a{
+						color: $helesinine;
+					}
+				}
+				a{
+					text-transform: uppercase;
+					text-decoration: none;
+					font-family: 'tepeno_sansbold';
+					color: $hall;
+					font-size: 16pt;
+					display: block;
+					height: 30px;
+					line-height: 30px;
+
+
+
+				}
+			}
+		}
+	}
+	.left{
+		width:94%;
+		padding-right: 3%;
+		padding-left: 3%;
+	}
+}
+
+
+
+
+
+
+} //500

@@ -37,6 +37,11 @@ section.content{
 			position: relative;
 			span{
 				position: absolute;
+				-webkit-hyphens: auto;
+				   -moz-hyphens: auto;
+				    -ms-hyphens: auto;
+				        hyphens: auto;
+				word-break:break-word;
 				bottom: 5px;
 				right: 20px;
 				color: #fff;
