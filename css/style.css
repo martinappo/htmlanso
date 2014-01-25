@@ -943,6 +943,19 @@ section#nolvad .left .nolv article.kirjeldus {
   -o-transition: all 300ms ease;
   transition: all 300ms ease;
 }
+section#nolvad .left .nolv article.kirjeldus .img {
+  width: 20%;
+  height: 100px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  margin-right: 5px;
+}
 section#nolvad .left .nolv article.kirjeldus p {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -2138,6 +2151,12 @@ nav.arhiiv ul li a:hover {
     -ms-transition: all 300ms ease;
     -o-transition: all 300ms ease;
     transition: all 300ms ease;
+  }
+  section#nolvad .left .nolv article.kirjeldus .img {
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 2%;
   }
   section#nolvad .left .nolv article.kirjeldus p {
     padding-top: 10px;
