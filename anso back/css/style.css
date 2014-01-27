@@ -2438,6 +2438,10 @@ section.full table.hinnakiri td input {
   border: none;
 }
 
+ul#jarjestus.vertical li {
+  float: none;
+  width: 200px;
+}
 ul#jarjestus li {
   display: block;
   float: left;
@@ -2704,6 +2708,11 @@ textarea.sisu {
   margin-bottom: 20px;
   outline: none;
   border: solid 1px #636363;
+}
+textarea.sisu.nolv {
+  height: 150px;
+  width: 90%;
+  margin-top: 20px;
 }
 
 ul {

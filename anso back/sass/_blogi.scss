@@ -110,6 +110,11 @@ textarea.sisu{
 	margin-bottom: 20px;
 	outline:none;
 	border: solid 1px $grey;
+	&.nolv{
+		height: 150px;
+		width: 90%;
+		margin-top: 20px;
+	}
 }
 ul{
 	list-style-type:none;

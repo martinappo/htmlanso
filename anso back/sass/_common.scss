@@ -220,6 +220,12 @@ section.full{
 	}
 
 ul#jarjestus{
+	&.vertical{
+		li{
+			float:none;
+			width: 200px;
+		}
+	}
 	li{
 		display:block;
 		float:left;

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html class="group">
+<head>
+<title></title>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<!--[if lt IE 9]>
+  <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script>
+	$(document).ready(function () {
+    $('ul#jarjestus.vertical').sortable({
+        axis: 'y',
+        stop: function (event, ui) {
+	        var data = $(this).sortable('serialize');
+            $('span').text(data);
+
+            /*$.ajax({
+                    data: oData,
+                type: 'POST',
+                url: '/your/url/here'
+            });*/
+	}
+    });
+});
+</script>
+</head>
+<body class="group">
+<header class="main">
+	<div class="logo"></div>
+	<h1>Sinu kodulehe adminpaneel</h1>
+</header>
+<aside>
+	<nav>
+		<h1>Talv</h1>
+		<ul>
+		<li><a href="#">Nõlvad</a></li>
+		<li><a href="#">Vahelehed</a>
+			<ul>
+				<li><a href="#">Halda lehti</a></li>
+				<li><a href="#">Lisa leht</a></li>
+			</ul>
+		</li>
+		</ul>
+		<h1>Suvi</h1>
+		<ul>
+		<li><a href="#">Vahelehed</a>
+			<ul>
+				<li><a href="#">Halda lehti</a></li>
+				<li><a href="#">Lisa leht</a></li>
+			</ul>
+		</li>
+		</ul>
+		<h1>Mõlemal</h1>
+		<ul>
+		<li><a href="#">Hinnakiri</a></li>
+		<li><a href="#">Uudised</a>
+			<ul>
+				<li><a href="#">Halda uudiseid</a></li>
+				<li><a href="#">Lisa uudis</a></li>
+			</ul>
+		</li>
+		<li><a href="#">Kontakt</a></li>
+		</ul>
+	</nav>
+
+</aside>
+<section id="index" class="group">
+	<header class="group"><h1>Kodu</h1></header>
+	<section class="group full">
+	<header><h1>Menüü järjekord</h1></header>
+		<p id="menu">Tõsta menüüelemendid järjekorda.</p>
+		<ul id="jarjestus" class="vertical">
+			<li id="item-1">Avaleht</li>
+			<li id="item-2">Hinnakiri</li>
+			<li id="item-3">Nõlvad</li>
+			<li id="item-4">Majutus</li>
+			<li id="item-5">Laenutus</li>
+			<li id="item-6" class="active">Galerii</li>
+			<li id="item-7">Asukoht</li>
+			<li id="item-8">Kontakt</li>
+		</ul>
+		<input type="submit" value="Muuda" class="btn"></input>
+	</section>
+</section>
+<footer class="main">
+	<div class="crisplogo"></div>
+	<div>Sisuhaldus</div>
+</footer>
+</body>
+</html>
