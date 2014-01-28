@@ -60,6 +60,13 @@ $('.nolv').mouseleave(function() {
 
 	});
 
+$('a.maereeglid').click(function() {
+	   $('#maereeglid').toggleClass("hidden");
+
+	});
+
+
+
 
 //fancybox
 $("a.video").click(function() {

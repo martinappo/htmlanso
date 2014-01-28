@@ -776,7 +776,7 @@ section.middle .slogancontainer div.slogan {
 section.middle .slogancontainer div.slogan p {
   text-transform: uppercase;
   color: #FFF;
-  text-shadow: 0px 2px 2px rgba(133, 133, 133, 0.72);
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.6);
   text-align: left;
   bottom: 5px;
   position: absolute;
@@ -817,13 +817,13 @@ footer.main .footersection.right .toetaja {
   margin-bottom: 10px;
 }
 footer.main .footersection.middle {
-  width: 44%;
+  width: 62%;
 }
 footer.main .footersection.middle a.larger {
   color: rgba(0, 173, 255, 0.86) !important;
 }
 footer.main .footersection.left {
-  width: 26%;
+  width: 36%;
   padding-right: 2%;
 }
 footer.main .footersection.left .social {
@@ -894,7 +894,7 @@ section#nolvad .left {
   padding-bottom: 25px;
 }
 section#nolvad .left .nolv {
-  height: 38px;
+  height: 100px;
   width: 100%;
   position: relative;
   margin-bottom: 5px;
@@ -911,9 +911,9 @@ section#nolvad .left .nolv:last-of-type {
 section#nolvad .left .nolv div, section#nolvad .left .nolv a {
   display: block;
   text-align: left;
-  height: 38px;
+  height: 100px;
   float: left;
-  line-height: 38px;
+  line-height: 100px;
   text-transform: uppercase;
   font-family: 'tepeno_sansbold';
   font-size: 10pt;
@@ -934,7 +934,7 @@ section#nolvad .left .nolv article.kirjeldus {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  top: 38px;
+  top: 100px;
   color: #fff;
   font-family: 'tepeno_sansregular';
   -webkit-transition: all 300ms ease;
@@ -944,8 +944,8 @@ section#nolvad .left .nolv article.kirjeldus {
   transition: all 300ms ease;
 }
 section#nolvad .left .nolv article.kirjeldus .img {
-  width: 20%;
-  height: 100px;
+  width: 300px;
+  height: 200px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -962,17 +962,56 @@ section#nolvad .left .nolv article.kirjeldus p {
   margin: 0;
 }
 section#nolvad .left .nolv .ikoon {
-  width: 11.260714%;
+  width: 18.260714%;
   background-position: center center;
   background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  position: relative;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+section#nolvad .left .nolv .ikoon:after {
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #FFF;
+  z-index: 1;
+  position: absolute;
+  opacity: 0.5;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+section#nolvad .left .nolv .ikoon .ikoontaust {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  z-index: 2;
 }
 section#nolvad .left .nolv .nimi {
-  width: 26.547214%;
+  width: 18.547214%;
   color: #fff;
+  padding-left: 5%;
 }
 section#nolvad .left .nolv .nimetus {
-  width: 36.86428%;
+  width: 28.86428%;
   color: rgba(0, 173, 255, 0.86);
+  padding-left: 5%;
 }
 section#nolvad .left .nolv .video {
   width: 11%;
@@ -1005,7 +1044,7 @@ section#nolvad .left .nolv .video:after {
   background-color: #FFF;
 }
 section#nolvad .left .nolv .staatus {
-  width: 14.29285%;
+  width: 13.29285%;
 }
 section#nolvad .left .nolv .staatus.avatud {
   color: #6fb121;
@@ -1051,6 +1090,11 @@ section#nolvad .right a.kaameralink {
   line-height: 90px;
   text-align: center;
   font-size: 15pt;
+}
+section#nolvad #maereeglid.hidden {
+  height: 0px;
+  overflow: hidden;
+  padding: 0;
 }
 
 section#hinnakiri {
@@ -2098,8 +2142,9 @@ nav.arhiiv ul li a:hover {
     padding-bottom: 25px;
   }
   section#nolvad .left .nolv {
-    height: 50px;
-    width: 100%;
+    height: 90px;
+    width: 107%;
+    margin-left: -6%;
     position: relative;
     margin-bottom: 5px;
     -webkit-border-radius: 5px;
@@ -2115,9 +2160,9 @@ nav.arhiiv ul li a:hover {
   section#nolvad .left .nolv div, section#nolvad .left .nolv a {
     display: block;
     text-align: left;
-    height: 50px;
+    height: 90px;
     float: left;
-    line-height: 50px;
+    line-height: 90px;
     text-transform: uppercase;
     font-family: 'tepeno_sansbold';
     font-size: 12pt;
@@ -2164,28 +2209,75 @@ nav.arhiiv ul li a:hover {
     margin: 0;
   }
   section#nolvad .left .nolv .ikoon {
-    width: 11.260714%;
+    width: 20.260714%;
     background-position: center center;
     background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    position: relative;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+  }
+  section#nolvad .left .nolv .ikoon:after {
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #FFF;
+    z-index: 1;
+    position: absolute;
+    opacity: 0.5;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+  }
+  section#nolvad .left .nolv .ikoon .ikoontaust {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    z-index: 2;
   }
   section#nolvad .left .nolv .nimi {
-    width: 26.547214%;
+    width: 18.547214%;
     color: #fff;
+    padding-left: 5%;
     display: none;
   }
   section#nolvad .left .nolv .nimetus {
-    width: 46.86428%;
+    width: 38.86428%;
     color: rgba(0, 173, 255, 0.86);
+    padding-left: 5%;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    word-break: break-word;
+    line-height: 1.2;
+    padding-top: 30px;
+    height: 60px;
   }
   section#nolvad .left .nolv .video {
-    width: 17%;
+    width: 11%;
     background-image: url("../img/video.png");
     background-repeat: no-repeat;
     background-position: center center;
     position: relative;
   }
   section#nolvad .left .nolv .video:hover:after {
-    display: block;
+    display: none;
   }
   section#nolvad .left .nolv .video:after {
     content: "Sõida nõlv läbi";
@@ -2208,7 +2300,7 @@ nav.arhiiv ul li a:hover {
     background-color: #FFF;
   }
   section#nolvad .left .nolv .staatus {
-    width: 24.29285%;
+    width: 13.29285%;
   }
   section#nolvad .left .nolv .staatus.avatud {
     color: #6fb121;
