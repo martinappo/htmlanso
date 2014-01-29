@@ -372,14 +372,22 @@ html body {
   margin: 0px;
   padding: 0px;
   font-family: 'tepeno_sansregular';
-  background-image: url("../img/bg_2.jpg");
+  background-image: url("../img/bg.jpg");
   background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 0px -180px;
+  background-position: 0px -120px;
   color: #323337;
+}
+html body:before {
+  content: "";
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-image: url("../img/bg-cover.png");
+  background-repeat: repeat-x;
 }
 html body a {
   color: rgba(0, 173, 255, 0.86);
@@ -791,6 +799,8 @@ footer.main {
   margin-top: 35px;
   padding-bottom: 70px;
   height: 200px;
+  position: relative;
+  z-index: 2;
 }
 footer.main .footersection {
   float: left;
