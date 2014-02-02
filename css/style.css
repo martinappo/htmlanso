@@ -1,11 +1,16 @@
 @charset "UTF-8";
+
+
 /*! normalize.css v2.1.2 | MIT License | git.io/normalize */
+
 /* ==========================================================================
    HTML5 display definitions
    ========================================================================== */
+
 /**
  * Correct `block` display not defined in IE 8/9.
  */
+
 article,
 aside,
 details,
@@ -24,6 +29,7 @@ summary {
 /**
  * Correct `inline-block` display not defined in IE 8/9.
  */
+
 audio,
 canvas,
 video {
@@ -34,6 +40,7 @@ video {
  * Prevent modern browsers from displaying `audio` without controls.
  * Remove excess height in iOS 5 devices.
  */
+
 audio:not([controls]) {
   display: none;
   height: 0;
@@ -42,6 +49,7 @@ audio:not([controls]) {
 /**
  * Address styling not present in IE 8/9.
  */
+
 [hidden] {
   display: none;
 }
@@ -49,11 +57,13 @@ audio:not([controls]) {
 /* ==========================================================================
    Base
    ========================================================================== */
+
 /**
  * 1. Set default font family to sans-serif.
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
+
 html {
   font-family: sans-serif;
   /* 1 */
@@ -66,6 +76,7 @@ html {
 /**
  * Remove default margin.
  */
+
 body {
   margin: 0;
 }
@@ -73,9 +84,11 @@ body {
 /* ==========================================================================
    Links
    ========================================================================== */
+
 /**
  * Address `outline` inconsistency between Chrome and other browsers.
  */
+
 a:focus {
   outline: thin dotted;
 }
@@ -83,6 +96,7 @@ a:focus {
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
  */
+
 a:active,
 a:hover {
   outline: 0;
@@ -91,10 +105,12 @@ a:hover {
 /* ==========================================================================
    Typography
    ========================================================================== */
+
 /**
  * Address variable `h1` font-size and margin within `section` and `article`
  * contexts in Firefox 4+, Safari 5, and Chrome.
  */
+
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
@@ -103,6 +119,7 @@ h1 {
 /**
  * Address styling not present in IE 8/9, Safari 5, and Chrome.
  */
+
 abbr[title] {
   border-bottom: 1px dotted;
 }
@@ -110,6 +127,7 @@ abbr[title] {
 /**
  * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
  */
+
 b,
 strong {
   font-weight: bold;
@@ -118,6 +136,7 @@ strong {
 /**
  * Address styling not present in Safari 5 and Chrome.
  */
+
 dfn {
   font-style: italic;
 }
@@ -125,8 +144,10 @@ dfn {
 /**
  * Address differences between Firefox and other browsers.
  */
+
 hr {
   -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
   box-sizing: content-box;
   height: 0;
 }
@@ -134,6 +155,7 @@ hr {
 /**
  * Address styling not present in IE 8/9.
  */
+
 mark {
   background: #ff0;
   color: #000;
@@ -142,6 +164,7 @@ mark {
 /**
  * Correct font family set oddly in Safari 5 and Chrome.
  */
+
 code,
 kbd,
 pre,
@@ -153,6 +176,7 @@ samp {
 /**
  * Improve readability of pre-formatted text in all browsers.
  */
+
 pre {
   white-space: pre-wrap;
 }
@@ -160,6 +184,7 @@ pre {
 /**
  * Set consistent quote types.
  */
+
 q {
   quotes: "\201C" "\201D" "\2018" "\2019";
 }
@@ -167,6 +192,7 @@ q {
 /**
  * Address inconsistent and variable font size in all browsers.
  */
+
 small {
   font-size: 80%;
 }
@@ -174,6 +200,7 @@ small {
 /**
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
  */
+
 sub,
 sup {
   font-size: 75%;
@@ -193,9 +220,11 @@ sub {
 /* ==========================================================================
    Embedded content
    ========================================================================== */
+
 /**
  * Remove border when inside `a` element in IE 8/9.
  */
+
 img {
   border: 0;
 }
@@ -203,6 +232,7 @@ img {
 /**
  * Correct overflow displayed oddly in IE 9.
  */
+
 svg:not(:root) {
   overflow: hidden;
 }
@@ -210,9 +240,11 @@ svg:not(:root) {
 /* ==========================================================================
    Figures
    ========================================================================== */
+
 /**
  * Address margin not present in IE 8/9 and Safari 5.
  */
+
 figure {
   margin: 0;
 }
@@ -220,9 +252,11 @@ figure {
 /* ==========================================================================
    Forms
    ========================================================================== */
+
 /**
  * Define consistent border, margin, and padding.
  */
+
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
@@ -233,6 +267,7 @@ fieldset {
  * 1. Correct `color` not being inherited in IE 8/9.
  * 2. Remove padding so people aren't caught out if they zero out fieldsets.
  */
+
 legend {
   border: 0;
   /* 1 */
@@ -245,6 +280,7 @@ legend {
  * 2. Correct font size not being inherited in all browsers.
  * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
  */
+
 button,
 input,
 select,
@@ -261,6 +297,7 @@ textarea {
  * Address Firefox 4+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
  */
+
 button,
 input {
   line-height: normal;
@@ -272,6 +309,7 @@ input {
  * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
  * Correct `select` style inheritance in Firefox 4+ and Opera.
  */
+
 button,
 select {
   text-transform: none;
@@ -284,6 +322,7 @@ select {
  * 3. Improve usability and consistency of cursor style between image-type
  *    `input` and others.
  */
+
 button,
 html input[type="button"],
 input[type="reset"],
@@ -297,6 +336,7 @@ input[type="submit"] {
 /**
  * Re-set default cursor for disabled elements.
  */
+
 button[disabled],
 html input[disabled] {
   cursor: default;
@@ -306,8 +346,11 @@ html input[disabled] {
  * 1. Address box sizing set to `content-box` in IE 8/9.
  * 2. Remove excess padding in IE 8/9.
  */
+
 input[type="checkbox"],
 input[type="radio"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   /* 1 */
   padding: 0;
@@ -319,6 +362,7 @@ input[type="radio"] {
  * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
  *    (include `-moz` to future-proof).
  */
+
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -332,6 +376,7 @@ input[type="search"] {
  * Remove inner padding and search cancel button in Safari 5 and Chrome
  * on OS X.
  */
+
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
@@ -340,6 +385,7 @@ input[type="search"]::-webkit-search-decoration {
 /**
  * Remove inner padding and border in Firefox 4+.
  */
+
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -350,6 +396,7 @@ input::-moz-focus-inner {
  * 1. Remove default vertical scrollbar in IE 8/9.
  * 2. Improve readability and alignment in all browsers.
  */
+
 textarea {
   overflow: auto;
   /* 1 */
@@ -360,9 +407,11 @@ textarea {
 /* ==========================================================================
    Tables
    ========================================================================== */
+
 /**
  * Remove most spacing between table cells.
  */
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -375,12 +424,12 @@ html body {
   background-image: url("../img/bg.jpg");
   background-attachment: fixed;
   -webkit-background-size: cover;
-  -moz-background-size: cover;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0px -120px;
   color: #323337;
 }
+
 html body:before {
   content: "";
   position: fixed;
@@ -389,22 +438,27 @@ html body:before {
   background-image: url("../img/bg-cover.png");
   background-repeat: repeat-x;
 }
+
 html body a {
   color: rgba(0, 173, 255, 0.86);
 }
+
 html body .caps {
   text-transform: Uppercase;
   font-family: 'tepeno_sansbold';
 }
+
 html body .group:after {
   content: "";
   display: table;
   clear: both;
 }
+
 html body .full {
   width: 100%;
   clear: both;
 }
+
 html body .wrapper {
   width: 70%;
   margin-left: auto;
@@ -418,18 +472,19 @@ ehk lää-heb vaja
 -moz-box-sizing: border-box;
 box-sizing: border-box;
  */
+
 section.content {
   position: relative;
   padding-left: 25px;
   background-image: url("../img/content-bg.png");
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
   border-radius: 5px;
 }
+
 section.content header {
   width: 100%;
   position: relative;
 }
+
 section.content header h1 {
   color: gray;
   text-transform: uppercase;
@@ -439,10 +494,12 @@ section.content header h1 {
   padding: 0;
   font-weight: normal;
 }
+
 section.content .right {
   float: right;
   padding-top: 20px;
 }
+
 section.content .right a.imglink {
   height: 100px;
   width: 100%;
@@ -450,14 +507,12 @@ section.content .right a.imglink {
   background-repeat: no-repeat;
   background-position: center center;
   -webkit-background-size: cover;
-  -moz-background-size: cover;
   background-size: cover;
-  -webkit-border-radius: 5px 0px 0px 5px;
-  -moz-border-radius: 5px 0px 0px 5px;
   border-radius: 5px 0px 0px 5px;
   margin-top: 12px;
   position: relative;
 }
+
 section.content .right a.imglink span {
   position: absolute;
   -webkit-hyphens: auto;
@@ -472,34 +527,42 @@ section.content .right a.imglink span {
   font-size: 18pt;
   text-align: right;
 }
+
 section.content .right a.imglink:first-of-type {
   margin-top: 0px;
 }
+
 section.content .left {
   width: 62%;
   padding-right: 3%;
   padding-top: 25px;
   float: left;
 }
+
 section.content .left article {
   color: #323337;
   font-size: 11pt;
   text-align: justify;
 }
+
 section.content .left article:nth-of-type(1) {
   padding-top: 0px;
 }
+
 section.content .left article:last-of-type {
   padding-bottom: 15px;
 }
+
 section.content .left article p:nth-of-type(1) {
   margin-top: 0;
   padding-top: 0;
 }
+
 section.content .left article p:last-of-type {
   padding-bottom: 0px;
   margin-bottom: 0px;
 }
+
 section.content .left article h1 {
   font-weight: normal;
   font-size: 11pt;
@@ -508,9 +571,11 @@ section.content .left article h1 {
   margin-bottom: 0px;
   padding: 0;
 }
+
 section.content .left article p {
   line-height: 1.3;
 }
+
 section.content .left a.koik {
   float: right;
   color: rgba(0, 173, 255, 0.86);
@@ -520,14 +585,17 @@ section.content .left a.koik {
   font-size: 10pt;
   margin-bottom: 20px;
 }
+
 section.content .left a.loe {
   float: right;
   color: rgba(0, 173, 255, 0.86);
   text-decoration: none;
 }
+
 section.content .right {
   width: 30%;
 }
+
 section.content:before {
   content: "";
   position: absolute;
@@ -547,6 +615,7 @@ section.content:before {
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'tepeno_sansregular';
   src: url("tepeno_sans_regular-webfont.eot");
@@ -554,19 +623,20 @@ section.content:before {
   font-weight: normal;
   font-style: normal;
 }
+
 header.main {
   position: relative;
   background-color: rgba(255, 255, 255, 0.92);
-  -webkit-border-radius: 0px 0px 5px 5px;
-  -moz-border-radius: 0px 0px 5px 5px;
   border-radius: 0px 0px 5px 5px;
   height: 100px;
   z-index: 2;
   color: #6c6c6c;
 }
+
 header.main .openmenu {
   display: none;
 }
+
 header.main .logo {
   float: left;
   height: 100%;
@@ -576,9 +646,9 @@ header.main .logo {
   background-image: url("../img/logo_transparent_2.png");
   background-repeat: no-repeat;
   -webkit-background-size: contain;
-  -moz-background-size: contain;
   background-size: contain;
 }
+
 header.main .ilmateade {
   float: left;
   margin-left: 38px;
@@ -588,19 +658,23 @@ header.main .ilmateade {
   background-repeat: no-repeat;
   background-position: right bottom;
 }
+
 header.main .ilmateade .avatud {
   text-transform: uppercase;
   margin-bottom: 15px;
   font-size: 11pt;
 }
+
 header.main .ilmateade .ilm span.caps {
   margin-right: 5px;
 }
+
 header.main section.right {
   float: right;
   margin-right: 20px;
   height: 100%;
 }
+
 header.main section.right a.wakepark {
   text-decoration: none;
   color: #6c6c6c;
@@ -610,6 +684,7 @@ header.main section.right a.wakepark {
   padding-right: 50px;
   clear: both;
 }
+
 header.main section.right .hooaeg {
   font-size: 11pt;
   height: 27px;
@@ -618,11 +693,20 @@ header.main section.right .hooaeg {
   margin-bottom: 35px;
   float: right;
 }
+
 header.main section.right .hooaeg span {
   float: left;
-  margin-right: 10px;
+  margin-right: 5px;
 }
-header.main section.right .hooaeg a.suvi, header.main section.right .hooaeg a.talv {
+
+header.main section.right .hooaeg span.keel {
+  margin-left: 25px;
+  margin-right: 5px;
+}
+
+header.main section.right .hooaeg a.suvi,
+header.main section.right .hooaeg a.talv,
+header.main section.right .hooaeg a.keel {
   height: 27px;
   width: 27px;
   float: left;
@@ -630,19 +714,31 @@ header.main section.right .hooaeg a.suvi, header.main section.right .hooaeg a.ta
   background-position: center center;
   margin-left: 5px;
 }
+
+header.main section.right .hooaeg a.keel {
+  width: 20px;
+}
+
 header.main section.right .hooaeg a.suvi {
   background-image: url("../img/hooaeg-suvi.png");
 }
+
 header.main section.right .hooaeg a.talv {
   background-image: url("../img/hooaeg-talv.png");
+}
+
+header.main section.right .hooaeg a.en {
+  background-image: url("../img/gb.png");
+}
+
+header.main section.right .hooaeg a.ee {
+  background-image: url("../img/ee.png");
 }
 
 nav.main {
   background-color: rgba(0, 173, 255, 0.86);
   width: 100%;
   height: 40px;
-  -webkit-border-radius: 0px 0px 5px 5px;
-  -moz-border-radius: 0px 0px 5px 5px;
   border-radius: 0px 0px 5px 5px;
   opacity: 0.9;
   z-index: 1;
@@ -650,9 +746,11 @@ nav.main {
   clip: rect(5px 0px 0px 0px);
   position: relative;
 }
+
 nav.main .openmenu {
   display: none;
 }
+
 nav.main ul {
   padding: 0;
   margin: 0;
@@ -663,6 +761,7 @@ nav.main ul {
   padding-top: 0px;
   white-space: nowrap;
 }
+
 nav.main ul:after {
   content: "";
   height: 5px;
@@ -672,6 +771,7 @@ nav.main ul:after {
   right: 0px;
   top: -5px;
 }
+
 nav.main ul:before {
   content: "";
   height: 5px;
@@ -681,6 +781,7 @@ nav.main ul:before {
   left: 0px;
   top: -5px;
 }
+
 nav.main ul li {
   height: 40px;
   padding: 0;
@@ -690,6 +791,7 @@ nav.main ul li {
   margin-right: 20px;
   position: relative;
 }
+
 nav.main ul li:before {
   content: "";
   position: absolute;
@@ -704,9 +806,12 @@ nav.main ul li:before {
   opacity: 1;
   z-index: 2;
 }
-nav.main ul li.active:before, nav.main ul li:hover:before {
+
+nav.main ul li.active:before,
+nav.main ul li:hover:before {
   display: block;
 }
+
 nav.main ul li a {
   line-height: 40px;
   display: block;
@@ -722,6 +827,7 @@ section.middle {
   width: 100%;
   position: relative;
 }
+
 section.middle a.reaalajas {
   display: block;
   position: absolute;
@@ -738,6 +844,7 @@ section.middle a.reaalajas {
   font-size: 15pt;
   white-space: nowrap;
 }
+
 section.middle a.reaalajas:after {
   content: "";
   position: absolute;
@@ -749,10 +856,9 @@ section.middle a.reaalajas:after {
   display: block;
   background-color: rgba(0, 173, 255, 0.86);
   z-index: -1;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
   border-radius: 5px;
 }
+
 section.middle #next {
   height: 250px;
   position: absolute;
@@ -764,6 +870,7 @@ section.middle #next {
   cursor: hand;
   cursor: pointer;
 }
+
 section.middle .slogancontainer {
   margin-left: 25px;
   font-size: 22pt;
@@ -773,6 +880,7 @@ section.middle .slogancontainer {
   width: 50%;
   float: left;
 }
+
 section.middle .slogancontainer div.slogan {
   height: 220px;
   padding-top: 10px;
@@ -781,6 +889,7 @@ section.middle .slogancontainer div.slogan {
   bottom: 5px;
   position: relative;
 }
+
 section.middle .slogancontainer div.slogan p {
   text-transform: uppercase;
   color: #FFF;
@@ -802,14 +911,17 @@ footer.main {
   position: relative;
   z-index: 2;
 }
+
 footer.main .footersection {
   float: left;
   height: 200px;
 }
+
 footer.main .footersection.right {
   width: 26%;
   padding-left: 2%;
 }
+
 footer.main .footersection.right h1 {
   width: 100%;
   margin: 0;
@@ -817,6 +929,7 @@ footer.main .footersection.right h1 {
   font-size: 11pt;
   font-weight: normal;
 }
+
 footer.main .footersection.right .toetaja {
   width: 100%;
   height: 40px;
@@ -826,20 +939,25 @@ footer.main .footersection.right .toetaja {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
 footer.main .footersection.middle {
   width: 62%;
 }
+
 footer.main .footersection.middle a.larger {
   color: rgba(0, 173, 255, 0.86) !important;
 }
+
 footer.main .footersection.left {
   width: 36%;
   padding-right: 2%;
 }
+
 footer.main .footersection.left .social {
   width: 100%;
   clear: both;
 }
+
 footer.main .footersection.left .social a.facebook {
   display: block;
   width: 28px;
@@ -848,6 +966,7 @@ footer.main .footersection.left .social a.facebook {
   background-repeat: no-repeat;
   margin-left: 25px;
 }
+
 footer.main .footersection.left h1 {
   float: left;
   width: 50%;
@@ -857,10 +976,12 @@ footer.main .footersection.left h1 {
   font-weight: normal;
   text-indent: 25px;
 }
+
 footer.main .footersection.left .kontaktid {
   float: right;
   width: 50%;
 }
+
 footer.main .footersection.left .kontaktid span {
   margin-bottom: 20px;
   display: block;
@@ -873,14 +994,12 @@ footer.main .footersection.left .kontaktid span {
   background-repeat: no-repeat;
   background-position: center center;
   -webkit-background-size: cover;
-  -moz-background-size: cover;
   background-size: cover;
-  -webkit-border-radius: 5px 0px 0px 5px;
-  -moz-border-radius: 5px 0px 0px 5px;
   border-radius: 5px 0px 0px 5px;
   margin-top: 12px;
   position: relative;
 }
+
 .right .img span {
   position: absolute;
   bottom: 5px;
@@ -894,6 +1013,7 @@ footer.main .footersection.left .kontaktid span {
 section.uudis {
   padding-left: 0px;
 }
+
 section.uudis .left {
   width: 94%;
   padding-right: 3%;
@@ -903,22 +1023,24 @@ section.uudis .left {
 section#nolvad .left {
   padding-bottom: 25px;
 }
+
 section#nolvad .left .nolv {
   height: 100px;
   width: 100%;
   position: relative;
   margin-bottom: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
   border-radius: 5px;
   background-image: url("../img/nolv-bg.png");
   cursor: hover;
   cursor: pointer;
 }
+
 section#nolvad .left .nolv:last-of-type {
   margin-bottom: 25px;
 }
-section#nolvad .left .nolv div, section#nolvad .left .nolv a {
+
+section#nolvad .left .nolv div,
+section#nolvad .left .nolv a {
   display: block;
   text-align: left;
   height: 100px;
@@ -928,11 +1050,13 @@ section#nolvad .left .nolv div, section#nolvad .left .nolv a {
   font-family: 'tepeno_sansbold';
   font-size: 10pt;
 }
+
 section#nolvad .left .nolv.show article.kirjeldus {
   display: block;
   visibility: visible;
   opacity: 1;
 }
+
 section#nolvad .left .nolv article.kirjeldus {
   position: absolute;
   background-image: url("../img/n-kirj-bg.png");
@@ -941,48 +1065,41 @@ section#nolvad .left .nolv article.kirjeldus {
   visibility: hidden;
   opacity: 0;
   z-index: 3;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
   border-radius: 5px;
   top: 100px;
   color: #fff;
   font-family: 'tepeno_sansregular';
   -webkit-transition: all 300ms ease;
-  -moz-transition: all 300ms ease;
-  -ms-transition: all 300ms ease;
-  -o-transition: all 300ms ease;
   transition: all 300ms ease;
 }
+
 section#nolvad .left .nolv article.kirjeldus .img {
   width: 300px;
   height: 200px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
   border-radius: 5px;
   background-position: center center;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
-  -moz-background-size: cover;
   background-size: cover;
   margin-right: 5px;
 }
+
 section#nolvad .left .nolv article.kirjeldus p {
   padding-top: 10px;
   padding-bottom: 10px;
   margin: 0;
 }
+
 section#nolvad .left .nolv .ikoon {
   width: 18.260714%;
   background-position: center center;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
-  -moz-background-size: cover;
   background-size: cover;
   position: relative;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
   border-radius: 5px;
 }
+
 section#nolvad .left .nolv .ikoon:after {
   content: "";
   top: 0;
@@ -993,10 +1110,9 @@ section#nolvad .left .nolv .ikoon:after {
   z-index: 1;
   position: absolute;
   opacity: 0.5;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
   border-radius: 5px;
 }
+
 section#nolvad .left .nolv .ikoon .ikoontaust {
   position: absolute;
   top: 0;
@@ -1004,25 +1120,25 @@ section#nolvad .left .nolv .ikoon .ikoontaust {
   left: 0;
   right: 0;
   -webkit-background-size: contain;
-  -moz-background-size: contain;
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
   border-radius: 5px;
   z-index: 2;
 }
+
 section#nolvad .left .nolv .nimi {
   width: 18.547214%;
   color: #fff;
   padding-left: 5%;
 }
+
 section#nolvad .left .nolv .nimetus {
   width: 28.86428%;
   color: rgba(0, 173, 255, 0.86);
   padding-left: 5%;
 }
+
 section#nolvad .left .nolv .video {
   width: 11%;
   background-image: url("../img/video.png");
@@ -1030,9 +1146,11 @@ section#nolvad .left .nolv .video {
   background-position: center center;
   position: relative;
 }
+
 section#nolvad .left .nolv .video:hover:after {
   display: block;
 }
+
 section#nolvad .left .nolv .video:after {
   content: "Sõida nõlv läbi";
   display: none;
@@ -1048,25 +1166,28 @@ section#nolvad .left .nolv .video:after {
   top: 50%;
   margin-top: -10px;
   left: -100%;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
   border-radius: 3px;
   background-color: #FFF;
 }
+
 section#nolvad .left .nolv .staatus {
   width: 13.29285%;
 }
+
 section#nolvad .left .nolv .staatus.avatud {
   color: #6fb121;
 }
+
 section#nolvad .left .nolv .staatus.suletud {
   color: #6c6c6c;
 }
+
 section#nolvad .left header {
   width: 100%;
   position: relative;
   margin-bottom: 20px;
 }
+
 section#nolvad .left header h1 {
   color: gray;
   text-transform: uppercase;
@@ -1075,21 +1196,25 @@ section#nolvad .left header h1 {
   margin: 0;
   padding: 0;
 }
+
 section#nolvad .left header h1.h1left {
   float: left;
   width: 50%;
   display: block;
 }
+
 section#nolvad .left header h1.h1right {
   float: right;
   width: 50%;
   display: block;
   text-align: right;
 }
+
 section#nolvad .right {
   padding-top: 50px;
   padding-bottom: 25px;
 }
+
 section#nolvad .right a.kaameralink {
   color: rgba(0, 173, 255, 0.86);
   text-transform: uppercase;
@@ -1101,6 +1226,7 @@ section#nolvad .right a.kaameralink {
   text-align: center;
   font-size: 15pt;
 }
+
 section#nolvad #maereeglid.hidden {
   height: 0px;
   overflow: hidden;
@@ -1110,22 +1236,26 @@ section#nolvad #maereeglid.hidden {
 section#hinnakiri {
   padding-bottom: 20px;
 }
+
 section#hinnakiri .right {
   padding-top: 0px;
   width: 33%;
   padding-right: 2%;
   margin-bottom: 15px;
 }
+
 section#hinnakiri .left {
   margin-bottom: 15px;
   padding-top: 0px;
 }
+
 section#hinnakiri header {
   padding-top: 20px;
   width: 100%;
   position: relative;
   margin-bottom: 15px;
 }
+
 section#hinnakiri header h1 {
   color: gray;
   text-transform: uppercase;
@@ -1135,12 +1265,11 @@ section#hinnakiri header h1 {
   padding: 0;
   font-weight: normal;
 }
+
 section#hinnakiri h1.hinnakiri {
   display: block;
   background-color: #6c95eb;
   height: 27px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
   border-radius: 5px;
   padding: 0;
   margin: 0;
@@ -1151,20 +1280,21 @@ section#hinnakiri h1.hinnakiri {
   font-size: 12pt;
   line-height: 27px;
 }
+
 section#hinnakiri table.hinnakiri {
   margin-left: -5px;
   width: 100%;
   border-spacing: 5px;
   border-collapse: separate;
 }
+
 section#hinnakiri table.hinnakiri tr.head2 td {
   background-color: rgba(0, 133, 255, 0.86);
   opacity: 0.7;
 }
+
 section#hinnakiri table.hinnakiri td {
   background-color: rgba(0, 133, 255, 0.86);
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
   border-radius: 5px;
   height: 25px;
   border: none;
@@ -1175,10 +1305,12 @@ section#hinnakiri table.hinnakiri td {
   text-transform: uppercase;
   text-align: center;
 }
+
 section#hinnakiri table.hinnakiri td.head1 {
   height: 30px;
   line-height: 30px;
 }
+
 section#hinnakiri table.hinnakiri td.hind {
   background-color: #d2def8;
   color: #6c6c6c;
@@ -1187,32 +1319,36 @@ section#hinnakiri table.hinnakiri td.hind {
 section#majutus {
   padding-bottom: 20px;
 }
+
 section#majutus .right {
   padding-top: 0px;
   width: 43%;
   padding-right: 2%;
 }
+
 section#majutus .left {
   width: 52%;
   padding-top: 0px;
 }
+
 section#majutus header {
   padding-top: 25px;
   padding-bottom: 20px;
 }
+
 section#majutus table.hinnakiri {
   margin-left: -5px;
   width: 100%;
   border-spacing: 5px;
   border-collapse: separate;
 }
+
 section#majutus table.hinnakiri tr.head2 td {
   background-color: #89aaef;
 }
+
 section#majutus table.hinnakiri td {
   background-color: rgba(0, 133, 255, 0.86);
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
   border-radius: 5px;
   height: 25px;
   border: none;
@@ -1223,10 +1359,12 @@ section#majutus table.hinnakiri td {
   text-transform: uppercase;
   text-align: center;
 }
+
 section#majutus table.hinnakiri td.head1 {
   height: 30px;
   line-height: 30px;
 }
+
 section#majutus table.hinnakiri td.hind {
   background-color: #d2def8;
   color: #6c6c6c;
@@ -1238,36 +1376,43 @@ section#galerii {
   padding-bottom: 20px;
   /* single album */
 }
+
 section#galerii header {
   padding-left: 25px;
   padding-top: 0px;
 }
+
 section#galerii .left#albumid a.album:nth-child(3n+2) {
   margin-right: 0.75%;
   margin-left: 0.75%;
 }
+
 section#galerii .left#album a.pilt {
   display: block;
   width: 24.5%;
   height: 150px;
   -webkit-background-size: cover;
-  -moz-background-size: cover;
   background-size: cover;
   float: left;
   margin-right: 0.5%;
   margin-bottom: 0.5%;
 }
+
 section#galerii .video {
   width: 100%;
   margin-bottom: 20px;
 }
-section#galerii .video iframe, section#galerii .video .tutvustus {
+
+section#galerii .video iframe,
+section#galerii .video .tutvustus {
   float: left;
 }
+
 section#galerii .video .tutvustus {
   width: 48%;
   padding-left: 2%;
 }
+
 section#galerii .video .tutvustus h1 {
   color: rgba(0, 173, 255, 0.86);
   margin: 0;
@@ -1277,6 +1422,7 @@ section#galerii .video .tutvustus h1 {
   text-transform: uppercase;
   font-family: 'tepeno_sansbold';
 }
+
 section#galerii a.album {
   display: inline-block;
   float: left;
@@ -1284,10 +1430,7 @@ section#galerii a.album {
   height: 150px;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
-  -moz-background-size: cover;
   background-size: cover;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
   border-radius: 5px;
   margin-bottom: 5px;
   color: #fff;
@@ -1299,29 +1442,35 @@ section#galerii a.album {
   font-size: 20pt;
   white-space: nowrap;
 }
+
 section#galerii nav.galerii {
   padding-left: 28px;
 }
+
 section#galerii nav.galerii ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
+
 section#galerii nav.galerii ul li {
   float: left;
   margin-right: 20px;
   padding: 0;
   margin-left: 0;
 }
+
 section#galerii nav.galerii ul li.ui-tabs-active a {
   color: rgba(0, 173, 255, 0.86);
 }
+
 section#galerii nav.galerii ul li a {
   text-transform: uppercase;
   text-decoration: none;
   font-family: 'tepeno_sansbold';
   color: #6c6c6c;
 }
+
 section#galerii .left {
   width: 94%;
   padding-right: 3%;
@@ -1331,9 +1480,11 @@ section#galerii .left {
 nav.arhiiv {
   float: left;
 }
+
 nav.arhiiv ul {
   list-style-type: none;
 }
+
 nav.arhiiv ul li a {
   text-transform: uppercase;
   text-decoration: none;
@@ -1341,6 +1492,7 @@ nav.arhiiv ul li a {
   font-family: 'tepeno_sansbold';
   font-size: 10pt;
 }
+
 nav.arhiiv ul li a:hover {
   color: #6c6c6c;
 }
@@ -1348,12 +1500,15 @@ nav.arhiiv ul li a:hover {
 .wrapper#suvi article a {
   color: rgba(226, 172, 0, 0.78);
 }
+
 .wrapper#suvi a.koik {
   color: rgba(226, 172, 0, 0.78);
 }
+
 .wrapper#suvi nav.main {
   background-color: rgba(226, 172, 0, 0.78);
 }
+
 .wrapper#suvi nav.main ul:after {
   content: "";
   height: 5px;
@@ -1363,6 +1518,7 @@ nav.arhiiv ul li a:hover {
   right: 0px;
   top: -5px;
 }
+
 .wrapper#suvi nav.main ul:before {
   content: "";
   height: 5px;
@@ -1372,22 +1528,24 @@ nav.arhiiv ul li a:hover {
   left: 0px;
   top: -5px;
 }
+
 .wrapper#suvi section.middle a.reaalajas:after {
   background-color: rgba(226, 172, 0, 0.78);
 }
+
 .wrapper#suvi table.hinnakiri {
   margin-left: -5px;
   width: 100%;
   border-spacing: 5px;
   border-collapse: separate;
 }
+
 .wrapper#suvi table.hinnakiri tr.head2 td {
   background-color: #e2bf63;
 }
+
 .wrapper#suvi table.hinnakiri td {
   background-color: rgba(226, 172, 0, 0.78);
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
   border-radius: 5px;
   height: 25px;
   border: none;
@@ -1398,10 +1556,12 @@ nav.arhiiv ul li a:hover {
   text-transform: uppercase;
   text-align: center;
 }
+
 .wrapper#suvi table.hinnakiri td.head1 {
   height: 30px;
   line-height: 30px;
 }
+
 .wrapper#suvi table.hinnakiri td.hind {
   background-color: rgba(226, 163, 0, 0.3);
   color: #6c6c6c;
@@ -1413,6 +1573,7 @@ nav.arhiiv ul li a:hover {
     margin-right: 15px;
   }
 }
+
 @media screen and (max-width: 1080px) {
   html body .wrapper {
     width: 90%;
@@ -1421,36 +1582,41 @@ nav.arhiiv ul li a:hover {
     position: relative;
   }
 }
+
 @media screen and (max-width: 820px) {
   section#majutus {
     padding-bottom: 20px;
   }
+
   section#majutus .right {
     padding-top: 0px;
     width: 100%;
     padding-right: 2%;
   }
+
   section#majutus .left {
     width: 100%;
     padding-top: 20px;
   }
+
   section#majutus header {
     padding-top: 25px;
     padding-bottom: 20px;
   }
+
   section#majutus table.hinnakiri {
     margin-left: -5px;
     width: 100%;
     border-spacing: 5px;
     border-collapse: separate;
   }
+
   section#majutus table.hinnakiri tr.head2 td {
     background-color: #89aaef;
   }
+
   section#majutus table.hinnakiri td {
     background-color: rgba(0, 133, 255, 0.86);
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
     border-radius: 5px;
     height: 25px;
     border: none;
@@ -1461,10 +1627,12 @@ nav.arhiiv ul li a:hover {
     text-transform: uppercase;
     text-align: center;
   }
+
   section#majutus table.hinnakiri td.head1 {
     height: 30px;
     line-height: 30px;
   }
+
   section#majutus table.hinnakiri td.hind {
     background-color: #d2def8;
     color: #6c6c6c;
@@ -1474,15 +1642,18 @@ nav.arhiiv ul li a:hover {
     float: none;
     margin-right: 25px;
   }
+
   nav.arhiiv ul {
     list-style-type: none;
     width: 100%;
     padding: 0;
     margin: 0;
   }
+
   nav.arhiiv ul li {
     text-align: center;
   }
+
   nav.arhiiv ul li a {
     text-transform: uppercase;
     text-decoration: none;
@@ -1492,6 +1663,7 @@ nav.arhiiv ul li a:hover {
     display: block;
     line-height: 1.5;
   }
+
   nav.arhiiv ul li a:hover {
     color: #6c6c6c;
   }
@@ -1499,6 +1671,7 @@ nav.arhiiv ul li a:hover {
   nav.main {
     height: auto;
   }
+
   nav.main .openmenu {
     z-index: 5;
     display: block;
@@ -1516,11 +1689,13 @@ nav.arhiiv ul li a:hover {
     left: 50%;
     margin-left: -15%;
   }
+
   nav.main .openmenu.open {
     visibility: visible;
     display: block;
     position: relative;
   }
+
   nav.main .openmenu:before {
     content: "";
     position: absolute;
@@ -1536,13 +1711,16 @@ nav.arhiiv ul li a:hover {
     opacity: 1;
     z-index: 2;
   }
+
   nav.main ul {
     height: auto;
     overflow: hidden;
   }
+
   nav.main ul.open li {
     height: auto;
   }
+
   nav.main ul li {
     display: block;
     float: left;
@@ -1552,9 +1730,12 @@ nav.arhiiv ul li a:hover {
     overflow: hidden;
     height: 0px;
   }
-  nav.main ul li.active:before, nav.main ul li:hover:before {
+
+  nav.main ul li.active:before,
+  nav.main ul li:hover:before {
     display: none;
   }
+
   nav.main ul li a {
     line-height: 40px;
     display: block;
@@ -1569,20 +1750,21 @@ nav.arhiiv ul li a:hover {
     display: none;
   }
 }
+
 @media screen and (max-width: 820px) {
   header.main {
     position: relative;
     background-color: rgba(255, 255, 255, 0.92);
-    -webkit-border-radius: 0px 0px 5px 5px;
-    -moz-border-radius: 0px 0px 5px 5px;
     border-radius: 0px 0px 5px 5px;
     height: 200px;
     z-index: 2;
     color: #6c6c6c;
   }
+
   header.main .openmenu {
     display: none;
   }
+
   header.main .logo {
     float: none;
     height: 50%;
@@ -1593,9 +1775,9 @@ nav.arhiiv ul li a:hover {
     background-image: url("../img/logo_transparent.png");
     background-repeat: no-repeat;
     -webkit-background-size: contain;
-    -moz-background-size: contain;
     background-size: contain;
   }
+
   header.main .ilmateade {
     margin-left: 0px;
     width: 45%;
@@ -1607,14 +1789,17 @@ nav.arhiiv ul li a:hover {
     background-repeat: no-repeat;
     background-position: 60% 100%;
   }
+
   header.main .ilmateade .avatud {
     text-transform: uppercase;
     margin-bottom: 15px;
     font-size: 13pt;
   }
+
   header.main .ilmateade .ilm span.caps {
     margin-right: 5px;
   }
+
   header.main section.right {
     float: right;
     margin-right: 0px;
@@ -1623,6 +1808,7 @@ nav.arhiiv ul li a:hover {
     height: auto;
     padding: 0px;
   }
+
   header.main section.right a.wakepark {
     text-decoration: none;
     color: #6c6c6c;
@@ -1632,6 +1818,7 @@ nav.arhiiv ul li a:hover {
     padding-right: 0px;
     clear: both;
   }
+
   header.main section.right .hooaeg {
     font-size: 13pt;
     height: 27px;
@@ -1640,11 +1827,19 @@ nav.arhiiv ul li a:hover {
     margin-bottom: 35px;
     float: right;
   }
+
   header.main section.right .hooaeg span {
     float: left;
     margin-right: 10px;
   }
-  header.main section.right .hooaeg a.suvi, header.main section.right .hooaeg a.talv {
+
+  header.main section.right .hooaeg span.keel {
+    margin-left: 10px;
+    margin-right: 0px;
+  }
+
+  header.main section.right .hooaeg a.suvi,
+  header.main section.right .hooaeg a.talv {
     height: 27px;
     width: 27px;
     float: left;
@@ -1652,9 +1847,11 @@ nav.arhiiv ul li a:hover {
     background-position: center center;
     margin-left: 5px;
   }
+
   header.main section.right .hooaeg a.suvi {
     background-image: url("../img/hooaeg-suvi.png");
   }
+
   header.main section.right .hooaeg a.talv {
     background-image: url("../img/hooaeg-talv.png");
   }
@@ -1670,14 +1867,14 @@ nav.arhiiv ul li a:hover {
     position: relative;
     padding-left: 25px;
     background-image: url("../img/content-bg.png");
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
     border-radius: 5px;
   }
+
   section.content header {
     width: 100%;
     position: relative;
   }
+
   section.content header h1 {
     color: gray;
     text-transform: uppercase;
@@ -1688,10 +1885,12 @@ nav.arhiiv ul li a:hover {
     padding: 0;
     font-weight: normal;
   }
+
   section.content .right {
     float: right;
     padding-top: 20px;
   }
+
   section.content .right a.imglink {
     height: 100px;
     width: 70%;
@@ -1701,15 +1900,13 @@ nav.arhiiv ul li a:hover {
     background-repeat: no-repeat;
     background-position: center center;
     -webkit-background-size: cover;
-    -moz-background-size: cover;
     background-size: cover;
-    -webkit-border-radius: 5px 5px 5px 5px;
-    -moz-border-radius: 5px 5px 5px 5px;
     border-radius: 5px 5px 5px 5px;
     margin-top: 12px;
     position: relative;
     padding: 0px;
   }
+
   section.content .right a.imglink span {
     position: absolute;
     -webkit-hyphens: auto;
@@ -1724,9 +1921,11 @@ nav.arhiiv ul li a:hover {
     font-size: 18pt;
     text-align: center;
   }
+
   section.content .right a.imglink:first-of-type {
     margin-top: 0px;
   }
+
   section.content .left {
     width: 100%;
     padding-right: 3%;
@@ -1736,25 +1935,31 @@ nav.arhiiv ul li a:hover {
     padding-top: 25px;
     float: right;
   }
+
   section.content .left article {
     color: #323337;
     font-size: 15pt;
     text-align: justify;
   }
+
   section.content .left article:nth-of-type(1) {
     padding-top: 0px;
   }
+
   section.content .left article:last-of-type {
     padding-bottom: 15px;
   }
+
   section.content .left article p:nth-of-type(1) {
     margin-top: 0;
     padding-top: 0;
   }
+
   section.content .left article p:last-of-type {
     padding-bottom: 0px;
     margin-bottom: 0px;
   }
+
   section.content .left article h1 {
     font-weight: normal;
     font-size: 15pt;
@@ -1764,9 +1969,11 @@ nav.arhiiv ul li a:hover {
     padding: 0;
     text-align: center;
   }
+
   section.content .left article p {
     line-height: 1.3;
   }
+
   section.content .left a.koik {
     float: right;
     color: rgba(0, 173, 255, 0.86);
@@ -1776,14 +1983,17 @@ nav.arhiiv ul li a:hover {
     font-size: 18pt;
     margin-bottom: 20px;
   }
+
   section.content .left a.loe {
     float: right;
     color: rgba(0, 173, 255, 0.86);
     text-decoration: none;
   }
+
   section.content .right {
     width: 100%;
   }
+
   section.content:before {
     content: "";
     position: absolute;
@@ -1797,6 +2007,7 @@ nav.arhiiv ul li a:hover {
   }
 
   /******** footer ************************/
+
   footer.main {
     width: 100%;
     color: #6c6c6c;
@@ -1805,14 +2016,17 @@ nav.arhiiv ul li a:hover {
     padding-bottom: 70px;
     height: 200px;
   }
+
   footer.main .footersection {
     float: none;
     height: 200px;
   }
+
   footer.main .footersection.right {
     width: 100%;
     padding-left: 2%;
   }
+
   footer.main .footersection.right h1 {
     width: 100%;
     margin: 0;
@@ -1820,6 +2034,7 @@ nav.arhiiv ul li a:hover {
     font-size: 11pt;
     font-weight: normal;
   }
+
   footer.main .footersection.right .toetaja {
     width: 100%;
     height: 40px;
@@ -1829,25 +2044,28 @@ nav.arhiiv ul li a:hover {
     margin-top: 10px;
     margin-bottom: 10px;
   }
+
   footer.main .footersection.middle {
     width: 100%;
   }
+
   footer.main .footersection.middle a.larger {
     color: rgba(0, 173, 255, 0.86) !important;
   }
+
   footer.main .footersection.left {
     width: 100%;
     padding-right: 0%;
     background-color: rgba(255, 255, 255, 0.82);
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
     border-radius: 5px;
     padding-top: 10px;
   }
+
   footer.main .footersection.left .social {
     width: 100%;
     clear: both;
   }
+
   footer.main .footersection.left .social a.facebook {
     display: block;
     width: 28px;
@@ -1857,6 +2075,7 @@ nav.arhiiv ul li a:hover {
     margin-left: auto;
     margin-right: auto;
   }
+
   footer.main .footersection.left h1 {
     float: none;
     width: 100%;
@@ -1867,38 +2086,45 @@ nav.arhiiv ul li a:hover {
     text-align: center;
     text-indent: 0px;
   }
+
   footer.main .footersection.left .kontaktid {
     float: none;
     width: 100%;
     text-align: center;
     font-size: 15pt;
   }
+
   footer.main .footersection.left .kontaktid span {
     margin-bottom: 20px;
     display: block;
   }
 
   /* hinnakiri ******************/
+
   section#hinnakiri {
     padding-bottom: 20px;
     font-size: 15pt;
   }
+
   section#hinnakiri .right {
     padding-top: 0px;
     width: 98%;
     padding-right: 4%;
     margin-bottom: 15px;
   }
+
   section#hinnakiri .left {
     margin-bottom: 15px;
     padding-top: 0px;
   }
+
   section#hinnakiri header {
     padding-top: 20px;
     width: 100%;
     position: relative;
     margin-bottom: 15px;
   }
+
   section#hinnakiri header h1 {
     color: gray;
     text-transform: uppercase;
@@ -1909,14 +2135,14 @@ nav.arhiiv ul li a:hover {
     padding: 0;
     font-weight: normal;
   }
+
   section#hinnakiri table.hinnakiri tr.head2 td {
     background-color: rgba(0, 133, 255, 0.86);
     opacity: 0.7;
   }
+
   section#hinnakiri table.hinnakiri td {
     background-color: rgba(0, 133, 255, 0.86);
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
     border-radius: 5px;
     height: 25px;
     border: none;
@@ -1928,29 +2154,32 @@ nav.arhiiv ul li a:hover {
     text-transform: uppercase;
     text-align: center;
   }
+
   section#hinnakiri table.hinnakiri td.head1 {
     height: 30px;
     line-height: 30px;
   }
+
   section#hinnakiri table.hinnakiri td.hind {
     background-color: #d2def8;
     color: #6c6c6c;
   }
 }
+
 @media screen and (max-width: 500px) {
   header.main {
     position: relative;
     background-color: rgba(255, 255, 255, 0.92);
-    -webkit-border-radius: 0px 0px 5px 5px;
-    -moz-border-radius: 0px 0px 5px 5px;
     border-radius: 0px 0px 5px 5px;
     height: 270px;
     z-index: 2;
     color: #6c6c6c;
   }
+
   header.main .openmenu {
     display: none;
   }
+
   header.main .logo {
     float: none;
     height: 30%;
@@ -1961,9 +2190,9 @@ nav.arhiiv ul li a:hover {
     background-image: url("../img/logo_transparent.png");
     background-repeat: no-repeat;
     -webkit-background-size: contain;
-    -moz-background-size: contain;
     background-size: contain;
   }
+
   header.main .ilmateade {
     margin-left: 0px;
     width: 90%;
@@ -1977,14 +2206,17 @@ nav.arhiiv ul li a:hover {
     background-position: 10px 100%;
     text-align: center;
   }
+
   header.main .ilmateade .avatud {
     text-transform: uppercase;
     margin-bottom: 15px;
     font-size: 13pt;
   }
+
   header.main .ilmateade .ilm span.caps {
     margin-right: 5px;
   }
+
   header.main section.right {
     text-align: center;
     float: none;
@@ -1995,6 +2227,7 @@ nav.arhiiv ul li a:hover {
     height: auto;
     padding: 0px;
   }
+
   header.main section.right a.wakepark {
     text-decoration: none;
     color: #6c6c6c;
@@ -2004,6 +2237,7 @@ nav.arhiiv ul li a:hover {
     padding-right: 0px;
     clear: both;
   }
+
   header.main section.right .hooaeg {
     font-size: 13pt;
     height: auto;
@@ -2015,20 +2249,21 @@ nav.arhiiv ul li a:hover {
     text-align: center;
     float: none;
     height: 27px;
-    width: 60%;
-    padding-left: 20%;
-    padding-right: 20%;
+    width: 100%;
     border-top: 1px solid rgba(0, 173, 255, 0.86);
     border-bottom: 1px solid rgba(0, 173, 255, 0.86);
     text-align: center;
     position: relative;
   }
+
   header.main section.right .hooaeg span {
     float: none;
     margin-right: 0px;
     display: none;
   }
-  header.main section.right .hooaeg a.suvi, header.main section.right .hooaeg a.talv {
+
+  header.main section.right .hooaeg a.suvi,
+  header.main section.right .hooaeg a.talv {
     height: 27px;
     width: 27px;
     margin-right: 5px;
@@ -2038,9 +2273,16 @@ nav.arhiiv ul li a:hover {
     float: none;
     display: inline-block;
   }
+
+  header.main section.right .hooaeg a.keel {
+    float: none;
+    display: inline-block;
+  }
+
   header.main section.right .hooaeg a.suvi {
     background-image: url("../img/hooaeg-suvi.png");
   }
+
   header.main section.right .hooaeg a.talv {
     background-image: url("../img/hooaeg-talv.png");
   }
@@ -2049,14 +2291,14 @@ nav.arhiiv ul li a:hover {
     position: relative;
     padding-left: 25px;
     background-image: url("../img/content-bg.png");
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
     border-radius: 5px;
   }
+
   section.content header {
     width: 100%;
     position: relative;
   }
+
   section.content header h1 {
     color: gray;
     text-transform: uppercase;
@@ -2066,10 +2308,12 @@ nav.arhiiv ul li a:hover {
     padding: 0;
     font-weight: normal;
   }
+
   section.content .right {
     float: right;
     padding-top: 20px;
   }
+
   section.content .right a.imglink {
     height: 100px;
     width: 90%;
@@ -2079,15 +2323,13 @@ nav.arhiiv ul li a:hover {
     background-repeat: no-repeat;
     background-position: center center;
     -webkit-background-size: cover;
-    -moz-background-size: cover;
     background-size: cover;
-    -webkit-border-radius: 5px 5px 5px 5px;
-    -moz-border-radius: 5px 5px 5px 5px;
     border-radius: 5px 5px 5px 5px;
     margin-top: 12px;
     position: relative;
     padding: 0px;
   }
+
   section.content .right a.imglink span {
     position: absolute;
     -webkit-hyphens: auto;
@@ -2102,12 +2344,15 @@ nav.arhiiv ul li a:hover {
     font-size: 18pt;
     text-align: center;
   }
+
   section.content .right a.imglink:first-of-type {
     margin-top: 0px;
   }
+
   section.content .right {
     width: 100%;
   }
+
   section.content:before {
     content: "";
     position: absolute;
@@ -2121,19 +2366,23 @@ nav.arhiiv ul li a:hover {
   }
 
   /* arhiv*/
+
   nav.arhiiv {
     float: none;
     margin-right: 25px;
   }
+
   nav.arhiiv ul {
     list-style-type: none;
     width: 100%;
     padding: 0;
     margin: 0;
   }
+
   nav.arhiiv ul li {
     text-align: center;
   }
+
   nav.arhiiv ul li a {
     text-transform: uppercase;
     text-decoration: none;
@@ -2143,31 +2392,35 @@ nav.arhiiv ul li a:hover {
     display: block;
     line-height: 1.5;
   }
+
   nav.arhiiv ul li a:hover {
     color: #6c6c6c;
   }
 
   /********************** nolvad ***********************/
+
   section#nolvad .left {
     padding-bottom: 25px;
   }
+
   section#nolvad .left .nolv {
     height: 90px;
     width: 107%;
     margin-left: -6%;
     position: relative;
     margin-bottom: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
     border-radius: 5px;
     background-image: url("../img/nolv-bg.png");
     cursor: hover;
     cursor: pointer;
   }
+
   section#nolvad .left .nolv:last-of-type {
     margin-bottom: 25px;
   }
-  section#nolvad .left .nolv div, section#nolvad .left .nolv a {
+
+  section#nolvad .left .nolv div,
+  section#nolvad .left .nolv a {
     display: block;
     text-align: left;
     height: 90px;
@@ -2177,6 +2430,7 @@ nav.arhiiv ul li a:hover {
     font-family: 'tepeno_sansbold';
     font-size: 12pt;
   }
+
   section#nolvad .left .nolv.show article.kirjeldus {
     display: block;
     visibility: visible;
@@ -2187,6 +2441,7 @@ nav.arhiiv ul li a:hover {
     left: 50%;
     margin-left: -44%;
   }
+
   section#nolvad .left .nolv article.kirjeldus {
     background-image: url("../img/n-kirj-bg.png");
     width: 96%;
@@ -2195,41 +2450,37 @@ nav.arhiiv ul li a:hover {
     visibility: hidden;
     opacity: 0;
     z-index: 3;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
     border-radius: 5px;
     top: 38px;
     color: #fff;
     font-family: 'tepeno_sansregular';
     -webkit-transition: all 300ms ease;
-    -moz-transition: all 300ms ease;
-    -ms-transition: all 300ms ease;
-    -o-transition: all 300ms ease;
     transition: all 300ms ease;
   }
+
   section#nolvad .left .nolv article.kirjeldus .img {
     width: 96%;
     margin-left: 2%;
     margin-right: 2%;
     margin-top: 2%;
   }
+
   section#nolvad .left .nolv article.kirjeldus p {
     padding-top: 10px;
     padding-bottom: 10px;
     margin: 0;
   }
+
   section#nolvad .left .nolv .ikoon {
     width: 20.260714%;
     background-position: center center;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
-    -moz-background-size: cover;
     background-size: cover;
     position: relative;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
     border-radius: 5px;
   }
+
   section#nolvad .left .nolv .ikoon:after {
     content: "";
     top: 0;
@@ -2240,10 +2491,9 @@ nav.arhiiv ul li a:hover {
     z-index: 1;
     position: absolute;
     opacity: 0.5;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
     border-radius: 5px;
   }
+
   section#nolvad .left .nolv .ikoon .ikoontaust {
     position: absolute;
     top: 0;
@@ -2251,21 +2501,20 @@ nav.arhiiv ul li a:hover {
     left: 0;
     right: 0;
     -webkit-background-size: contain;
-    -moz-background-size: contain;
     background-size: contain;
     background-position: center center;
     background-repeat: no-repeat;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
     border-radius: 5px;
     z-index: 2;
   }
+
   section#nolvad .left .nolv .nimi {
     width: 18.547214%;
     color: #fff;
     padding-left: 5%;
     display: none;
   }
+
   section#nolvad .left .nolv .nimetus {
     width: 38.86428%;
     color: rgba(0, 173, 255, 0.86);
@@ -2279,6 +2528,7 @@ nav.arhiiv ul li a:hover {
     padding-top: 30px;
     height: 60px;
   }
+
   section#nolvad .left .nolv .video {
     width: 11%;
     background-image: url("../img/video.png");
@@ -2286,9 +2536,11 @@ nav.arhiiv ul li a:hover {
     background-position: center center;
     position: relative;
   }
+
   section#nolvad .left .nolv .video:hover:after {
     display: none;
   }
+
   section#nolvad .left .nolv .video:after {
     content: "Sõida nõlv läbi";
     display: none;
@@ -2304,25 +2556,28 @@ nav.arhiiv ul li a:hover {
     top: 50%;
     margin-top: -10px;
     left: -100%;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
     border-radius: 3px;
     background-color: #FFF;
   }
+
   section#nolvad .left .nolv .staatus {
     width: 13.29285%;
   }
+
   section#nolvad .left .nolv .staatus.avatud {
     color: #6fb121;
   }
+
   section#nolvad .left .nolv .staatus.suletud {
     color: #6c6c6c;
   }
+
   section#nolvad .left header {
     width: 100%;
     position: relative;
     margin-bottom: 20px;
   }
+
   section#nolvad .left header h1 {
     color: gray;
     text-transform: uppercase;
@@ -2332,11 +2587,13 @@ nav.arhiiv ul li a:hover {
     margin: 0;
     padding: 0;
   }
+
   section#nolvad .left header h1.h1left {
     float: none;
     width: 100%;
     display: block;
   }
+
   section#nolvad .left header h1.h1right {
     float: none;
     width: 100%;
@@ -2346,10 +2603,12 @@ nav.arhiiv ul li a:hover {
     color: rgba(0, 173, 255, 0.86);
     text-transform: none;
   }
+
   section#nolvad .right {
     padding-top: 50px;
     padding-bottom: 25px;
   }
+
   section#nolvad .right a.kaameralink {
     color: rgba(0, 173, 255, 0.86);
     text-transform: uppercase;
@@ -2368,43 +2627,51 @@ nav.arhiiv ul li a:hover {
     padding-bottom: 20px;
     /* single album */
   }
+
   section#galerii header {
     padding-left: 0px;
     padding-top: 0px;
     text-align: center;
   }
+
   section#galerii header h1 {
     font-size: 18pt;
   }
+
   section#galerii .left#albumid a.album:nth-child(3n+2) {
     margin-right: 0%;
     margin-left: 0%;
   }
+
   section#galerii .left#album a.pilt {
     display: block;
     width: 100%;
     height: 150px;
     -webkit-background-size: cover;
-    -moz-background-size: cover;
     background-size: cover;
     float: none;
     margin-right: 0%;
     margin-bottom: 2%;
   }
+
   section#galerii .video {
     width: 100%;
     margin-bottom: 20px;
   }
-  section#galerii .video iframe, section#galerii .video .tutvustus {
+
+  section#galerii .video iframe,
+  section#galerii .video .tutvustus {
     float: none;
     width: 100%;
   }
+
   section#galerii .video .tutvustus {
     width: 100%;
     padding-left: 0%;
     text-align: justify;
     font-size: 15pt;
   }
+
   section#galerii .video .tutvustus h1 {
     color: rgba(0, 173, 255, 0.86);
     margin: 0;
@@ -2416,6 +2683,7 @@ nav.arhiiv ul li a:hover {
     text-align: center;
     padding-top: 10px;
   }
+
   section#galerii a.album {
     display: inline-block;
     float: left;
@@ -2423,10 +2691,7 @@ nav.arhiiv ul li a:hover {
     height: 100px;
     background-repeat: no-repeat;
     -webkit-background-size: cover;
-    -moz-background-size: cover;
     background-size: cover;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
     border-radius: 5px;
     margin-bottom: 5px;
     color: #fff;
@@ -2438,14 +2703,17 @@ nav.arhiiv ul li a:hover {
     font-size: 20pt;
     white-space: nowrap;
   }
+
   section#galerii nav.galerii {
     padding-left: 0px;
   }
+
   section#galerii nav.galerii ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
   }
+
   section#galerii nav.galerii ul li {
     float: none;
     margin-right: 0px;
@@ -2455,9 +2723,11 @@ nav.arhiiv ul li a:hover {
     margin-bottom: 5px;
     border-bottom: solid 1px rgba(0, 173, 255, 0.86);
   }
+
   section#galerii nav.galerii ul li.ui-tabs-active a {
     color: rgba(0, 173, 255, 0.86);
   }
+
   section#galerii nav.galerii ul li a {
     text-transform: uppercase;
     text-decoration: none;
@@ -2468,6 +2738,7 @@ nav.arhiiv ul li a:hover {
     height: 30px;
     line-height: 30px;
   }
+
   section#galerii .left {
     width: 94%;
     padding-right: 3%;
