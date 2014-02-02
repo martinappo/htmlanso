@@ -663,6 +663,7 @@ header.main .ilmateade .avatud {
   text-transform: uppercase;
   margin-bottom: 15px;
   font-size: 11pt;
+  min-width: 132px;
 }
 
 header.main .ilmateade .ilm span.caps {
