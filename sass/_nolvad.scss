@@ -207,7 +207,19 @@ transition: all 300ms ease;
 			 font-size: 15pt;
 		}
 	}
-
+	.maereeglid{
+		background-color: rgba(234, 76, 77, 0.8);
+		display: block;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+		height: 25px;
+		line-height: 25px;
+		color: #fff;
+		text-align: center;
+		text-decoration: none;
+		font-family: 'tepeno_sansbold';
+	}
 	#maereeglid.hidden{
 		height:0px;
 		overflow: hidden;
