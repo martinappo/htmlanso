@@ -20,7 +20,7 @@ footer.main{
 	}
 	.footersection{
 		float:left;
-		height: 200px;
+		padding-bottom: 20px;
 		&.right{
 			width: 26%;
 			padding-left: 2%;
@@ -53,7 +53,7 @@ footer.main{
 			padding-right: 2%;
 			.social{
 				width: 100%;
-				clear:both;
+				margin-top: 20px;
 				a.facebook{
 					display:block;
 					width: 28px;
